@@ -44,9 +44,16 @@
   background-color:rgb(224, 187, 4);
 }
 .mobile{
-  padding-top: 50px;
+  padding-top: 53px;
+}
+.mn{right:10px;}.mp{left:10px;}
+
+.events{
+  background-color: black;
+  height:400px;
 }
 }
+
 @media only screen and (min-width: 400px) and (max-width: 800px)
 {
 .content{
@@ -69,7 +76,7 @@
 }
 .aboutus{
   position: relative;
-  height:350px;
+  height:400px;
   background-color: rgba(81, 99, 127,1);
 
 }
@@ -78,6 +85,13 @@
   height:400px;
   background-color:rgb(224, 187, 4);
 }
+.big-screens{padding-top:50px;}
+
+.events{
+  background-color: black;
+  height:400px;
+}
+
 }
 @media only screen and (min-width: 800px) and (max-width: 1500px)
 {
@@ -100,16 +114,35 @@
   text-align: center;
 }
 .aboutus{
-  position: absolute;
-  height:300px;
+  position: relative;
+  height:400px;
   background-color: rgb(81, 99, 127);
 }
 .members{
-  position: absolute;
-  height:500px;
+  position: relative;
+  height:600px;
   background-color:rgb(224, 187, 4);
 }
+
+.events{
+
+  background-color: black;
+  height:800px;
+
 }
+.big-screens{
+  padding-top: 55px;
+}
+.contact{
+  background-color: rgb(85, 87, 89);
+  height:250px;
+}
+.icon-row{
+  padding-top: 47px;
+}
+}
+
+
 
 .btn-block{
   opacity:0.8;
@@ -118,7 +151,16 @@
 }
 
 .section-heading{
-  padding-top:50px;
+  padding-top:35px;
   color:white;
   border-bottom: 6px solid white;
+}
+.r1{
+  padding-top: 10px;
+}
+.r2{
+  padding-top: 50px;
+}
+.fa-5x:hover{
+  color:white;
 }
