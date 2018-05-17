@@ -1,37 +1,13 @@
 if(screen.width>800)
 {
   document.getElementsByClassName("mobile")[0].style.display="none";
-    document.getElementById("mobile-footer").style.display="none";
+    document.getElementById("mobile-foot").style.display="none";
 }
 else{
   document.getElementsByClassName("big-screens")[0].style.display="none";
   document.getElementsByClassName("big-screens")[1].style.display="none";
-  document.getElementsByClassName("big-screens")[2].style.display="none";
 }
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
 function faq(){
 
   document.getElementsByClassName("introim")[0].style.opacity="0.5";
@@ -51,3 +27,51 @@ function close_faq(){
   document.getElementsByClassName("faq")[0].style.display="none";
 
 }
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      if(screen.width>800)
+      {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 70
+      }, 800, function(){
+
+        });
+    }
+
+    if(screen.width<400)
+    {
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 90
+    }, 800, function(){
+
+      });
+  }
+
+
+  if(screen.width<800 && screen.width>=400)
+  {
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top - 70
+  }, 800, function(){
+
+    });
+}
+
+
+
+    } // End if
+  });
+});

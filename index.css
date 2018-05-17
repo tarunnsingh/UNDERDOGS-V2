@@ -12,10 +12,41 @@
 
   background-color: rgb(247, 249, 249);
 }
-
+.aboutus{
+  overflow-x: hidden;
+}
+.members{
+  overflow-x: hidden;
+}
+.events{
+  overflow-x: hidden;
+}
+.foot{
+  overflow-x: hidden;
+}
+.foot2{
+  overflow-x: hidden;
+}
 @media only screen and (min-width: 300px) and (max-width: 400px)
 {
+  #navbarLogo{
+width:180px;
+height:auto;
+
+  }
+  .fixing-space{
+  background-color: rgb(247, 249, 249);
+    height:92px;
+  }
+.brand-logo{
+  padding-top: 5px;
+  font-size: 25px;
+}
+.icon{
+  font-size: 15px;
+}
 .content{
+
   text-align: center;
   position:relative;
   left:20%;
@@ -64,8 +95,8 @@ top:180px;
 .close_icon{
   position:fixed;
   z-index: 100;
-  top:180px;
-  right:10%;
+  top:183px;
+  right:11%;
   cursor: pointer;
   transition: opacity 1s;
 }
@@ -77,6 +108,14 @@ top:180px;
 }
 @media only screen and (min-width: 400px) and (max-width: 800px)
 {
+  .fixing-space{
+      background-color: rgb(247, 249, 249);
+    height:120px;
+  }
+  #navbarLogo{
+width:250px;
+height:auto;
+  }
 .content{
   text-align: center;
   position:relative;
@@ -105,13 +144,20 @@ top:180px;
   position: relative;
   height:400px;
   background-color:rgb(224, 187, 4);
+
 }
 
 .big-screens{padding-top:50px;}
 
 .events{
   background-color: black;
-  height:400px;
+  height:520px;
+}
+.event_image{
+  padding-top: 10px;
+}
+.mobile{
+  padding-top: 50px;
 }
 .faq{
 position:fixed;
@@ -125,8 +171,8 @@ top:270px;
 .close_icon{
   position:fixed;
   z-index: 100;
-  top:270px;
-  right:10%;
+  top:273px;
+  right:11%;
   cursor: pointer;
   transition: opacity 1s;
 }
@@ -138,6 +184,17 @@ top:270px;
 }
 @media only screen and (min-width: 801px) and (max-width: 1199px)
 {
+  .fixing-space{
+      background-color: rgb(247, 249, 249);
+    height:120px;
+  }
+  #navbarLogo{
+    position: relative;
+    left:40px;
+width:250px;
+height:auto;
+
+  }
 .content{
   text-align: center;
   position:relative;
@@ -163,7 +220,7 @@ top:270px;
 }
 .members{
   position: relative;
-  height:600px;
+  height:630px;
   background-color:rgb(224, 187, 4);
 }
 
@@ -202,8 +259,8 @@ top:270px;
 .close_icon{
   position:fixed;
   z-index: 100;
-  top:270px;
-  right:10%;
+  top:273px;
+  right:11%;
   cursor: pointer;
   transition: opacity 1s;
 }
@@ -215,6 +272,17 @@ top:270px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px)
 {
+  .fixing-space{
+      background-color: rgb(247, 249, 249);
+    height:140px;
+  }
+  #navbarLogo{
+    position: relative;
+    left:100px;
+width:300px;
+height:auto;
+
+  }
 .content{
   text-align: center;
   position:relative;
@@ -243,7 +311,7 @@ top:270px;
 .members{
 
   position: relative;
-  height:600px;
+  height:630px;
   background-color:rgb(224, 187, 4);
 }
 
@@ -283,8 +351,8 @@ top:270px;
 .close_icon{
   position:fixed;
   z-index: 100;
-  top:270px;
-  right:10%;
+  top:273px;
+  right:11%;
   cursor: pointer;
   transition: opacity 1s;
 }
@@ -327,16 +395,29 @@ top:270px;
 }
 
 .i2 {
+  color:white;
+  transition: color 1s;
   padding-left:15px;
   padding-right: 15px;
 }
+.i1{
+  color:white;
+  transition: color 1s;
+}
+.i3{
+  color:white;
+  transition: color 1s;
+}
 .i1:hover{
+
   color: blue;
 }
 .i2:hover{
+
   color:pink;
 }
 .i3:hover{
+
   color:red;
 }
 .quote{
@@ -358,7 +439,14 @@ background-color: rgb(85, 87, 89);
   color:pink;
 }
 .mlinks{
+  transition: color 1s;
   color:white;
+}
+.links:hover{
+  color:black;
+}
+.quote{
+  color: white;
 }
 .foot2-row{
   padding-top: 20px;
