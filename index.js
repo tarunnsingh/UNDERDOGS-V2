@@ -15,6 +15,7 @@ function faq(){
   document.getElementsByClassName("members")[0].style.opacity="0.5";
   document.getElementsByClassName("events")[0].style.opacity="0.5";
    document.getElementsByClassName("foot")[0].style.opacity="0.5";
+     document.getElementsByClassName("navbar")[0].style.opacity="0.5";
   document.getElementsByClassName("faq")[0].style.display="block";
 
 }
@@ -25,7 +26,26 @@ function close_faq(){
   document.getElementsByClassName("events")[0].style.opacity="1";
    document.getElementsByClassName("foot")[0].style.opacity="1";
   document.getElementsByClassName("faq")[0].style.display="none";
+    document.getElementsByClassName("navbar")[0].style.opacity="1";
 
+}
+function gallery(){
+  document.getElementsByClassName("introim")[0].style.opacity="0.5";
+    document.getElementsByClassName("navbar")[0].style.opacity="0.5";
+  document.getElementsByClassName("content-row")[0].style.opacity="0.5";
+  document.getElementsByClassName("members")[0].style.opacity="0.5";
+  document.getElementsByClassName("events")[0].style.opacity="0.5";
+   document.getElementsByClassName("foot")[0].style.opacity="0.5";
+  document.getElementById("photogallery").style.display="block";
+}
+function close_gallery(){
+  document.getElementsByClassName("introim")[0].style.opacity="1";
+  document.getElementsByClassName("content-row")[0].style.opacity="1";
+  document.getElementsByClassName("members")[0].style.opacity="1";
+  document.getElementsByClassName("events")[0].style.opacity="1";
+   document.getElementsByClassName("foot")[0].style.opacity="1";
+    document.getElementById("photogallery").style.display="none";
+    document.getElementsByClassName("navbar")[0].style.opacity="1";
 }
 
 $(document).ready(function(){
@@ -75,3 +95,43 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+
+//GALLERY-section
+
+var i=1;
+function g1(){
+  document.getElementById("p1").style.display="block";
+    document.getElementById("p2").style.display="none";
+    i=1;
+}
+function g2(){
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p2").style.display="block";
+  i=2;
+}
+
+function leftgallery(){
+  i--;
+  if(i==1)
+  {
+  g1();
+}
+  else
+  {
+    g2();
+  }
+}
+
+function rightgallery(){
+  i++;
+  if(i==1)
+  {
+  g1();
+}
+  else
+  {
+    g2();
+  }
+}

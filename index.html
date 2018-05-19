@@ -16,12 +16,12 @@ UNDERDOGS CREW
 
 </head>
 
-<body>
+<body  onload="">
 <div class="fixing-space " id="top">
 </div>
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark" >
   <a class="navbar-brand text-center   mx-auto">
-    <img class="logo-sm" id="navbarLogo" src="assets/logo.png">
+    <img class="logo-sm" id="navbarLogo" src="assets/Front_page/logo.png">
 
   </a>
 
@@ -56,7 +56,7 @@ UNDERDOGS CREW
   <div class="row">
 <div class="col-md-12 ">
 <div class="introduction">
-  <img  class="img-fluid introim" src="assets/introimg.jpg"/>
+  <img  class="img-fluid introim" src="assets/Front_page/introimg.jpg"/>
   <div class="grpinfo"></div>
 </div>
 </div>
@@ -65,7 +65,7 @@ UNDERDOGS CREW
 <div class="row content-row">
     <div class="col-md-4 col-sm-4 content-column-1">
       <div class="card content" style="width: 13rem;">
-               <img class="card-img-top" src="assets/n3.jpg" alt="Card image cap">
+               <img class="card-img-top" src="assets/Front_page/n3.jpg" alt="Card image cap">
            <div class="card-body">
     <p class="card-text">VIDEOS</p>
   </div>
@@ -74,15 +74,15 @@ UNDERDOGS CREW
 
     <div class="col-md-4 col-sm-4 content-column-2">
       <div onclick="faq()" class="card content" style="width: 13rem;">
-               <img class="card-img-top" src="assets/n1.jpg" alt="Card image cap">
+               <img class="card-img-top" src="assets/Front_page/n1.jpg" alt="Card image cap">
             <div class="card-body">FAQ'S</p>
   </div>
 </div>
     </div>
 
     <div class="col-md-4 col-sm-4 content-column-3">
-      <div class="card content" style="width: 13rem;">
-              <img class="card-img-top" src="assets/n4.jpg" alt="Card image cap">
+      <div onclick="gallery()" class="card content" style="width: 13rem;">
+              <img class="card-img-top" src="assets/Front_page/n4.jpg" alt="Card image cap">
            <div class="card-body">
     <p class="card-text">GALLERY</p>
   </div>
@@ -155,8 +155,120 @@ UNDERDOGS CREW
 </div>
 </div>
 
+
+<!--PHOTO GALLERY-->
+
+<div class="text-center" id="photogallery" class="gallery">
+<img src="assets/page one/header.png" class="img-fluid text-center gallery-heading"/>
+<span onclick="close_gallery()"><i class="back-to-front-from-gallery fas fa-arrow-circle-left "></i></span><br/>
+<div class="container-fluid gallery-container" id="p1">
+<div class="row gallery-row">
+
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <img class="img-fluid gallery-image" src="assets/page one/akshat.jpg">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="assets/page one/back.png">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="assets/page one/d.jpg">
+</div>
+
+</div>
+<div class="row gallery-row">
+
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="assets/page one/logo.jpg">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="assets/page one/n1.jpg">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="assets/page one/n2.jpg">
+</div>
+
+</div>
+<div class="row gallery-row">
+
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="assets/page one/n3.jpg">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="assets/page one/n4.jpg">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="assets/page one/n5.jpg">
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid gallery-container" id="p2">
+<div class="row gallery-row">
+
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="">
+</div>
+
+</div>
+<div class="row gallery-row">
+
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="">
+</div>
+
+</div>
+<div class="row gallery-row">
+
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="">
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<img class="img-fluid gallery-image" src="">
+</div>
+
+</div>
+</div>
+
+<ul class="pagin text-center">
+
+
+<li class="pagin-element ele1" onclick="leftgallery()">
+<i class="fas fa-caret-left pagin-icons " ></i>
+</li>
+
+<li class="pagin-element ele2 " onclick="g1()"><a>1</a>
+</li>
+
+<li class="pagin-element ele3" onclick="g2()"><a>2</a>
+</li>
+
+<li class="pagin-element ele4" onclick="rightgallery()"><i class="fas fa-caret-right pagin-icons"></i>
+</li>
+
+</ul>
+<br/>
+</div>
+
+<!--front page continued-->
+
 <div class="row">
-  <button type="button" class="btn btn-lg btn-block btn-enroll">ENROLL NOW</button>
+  <a target="_blank" type="button" href="https://goo.gl/forms/bdUIL4Gq4HWSz3Xk1" class="btn btn-lg btn-block btn-enroll">ENROLL NOW</a>
 </div>
 
 <div id="s1" class="aboutus">
@@ -188,14 +300,54 @@ UNDERDOGS CREW
 
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid car-img " src="assets/members/m1.jpeg" alt="">
           </div>
           <div class="carousel-item text-center">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid car-img" src="assets/members/m2.jpeg" alt="">
           </div>
           <div class="carousel-item text-center">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid car-img" src="assets/members/m3.jpeg" alt="">
           </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m4.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m5.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m6.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m7.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m8.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img " src="assets/members/m9.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m10.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m11.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img" src="assets/members/m12.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid  car-img" src="assets/members/m13.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid  car-img" src="assets/members/m14.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img " src="assets/members/m15.jpeg" alt="">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="img-fluid car-img " src="assets/members/m16.jpeg" alt="">
+          </div>
+
         </div>
 
 
@@ -218,19 +370,19 @@ UNDERDOGS CREW
 
             <div class="row r1">
               <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m1.jpeg" alt="">
           </div>
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m2.jpeg" alt="">
           </div>
         </div>
 
         <div class="row r2">
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m3.jpeg" alt="">
       </div>
       <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m4.jpeg" alt="">
       </div>
         </div>
 
@@ -240,19 +392,19 @@ UNDERDOGS CREW
 
             <div class="row r1">
               <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m5.jpeg" alt="">
           </div>
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m6.jpeg" alt="">
           </div>
         </div>
 
         <div class="row r2">
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m7.jpeg" alt="">
       </div>
       <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m8.jpeg" alt="">
       </div>
         </div>
 
@@ -262,23 +414,45 @@ UNDERDOGS CREW
 
             <div class="row r1">
               <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m9.jpeg" alt="">
           </div>
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-            <img class="img-fluid " src="assets/carousel.jpg" alt="">
+            <img class="img-fluid " src="assets/members/m10.jpeg" alt="">
           </div>
         </div>
 
         <div class="row r2">
           <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m11.jpeg" alt="">
       </div>
       <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid " src="assets/carousel.jpg" alt="">
+        <img class="img-fluid " src="assets/members/m12.jpeg" alt="">
       </div>
         </div>
 
         </div>
+
+        <div class="carousel-item text-center">
+
+          <div class="row r1">
+            <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
+          <img class="img-fluid " src="assets/members/m13.jpeg" alt="">
+        </div>
+        <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
+          <img class="img-fluid " src="assets/members/m14.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="row r2">
+        <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
+      <img class="img-fluid " src="assets/members/m15.jpeg" alt="">
+    </div>
+    <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
+      <img class="img-fluid " src="assets/members/m16.jpeg" alt="">
+    </div>
+      </div>
+
+      </div>
 
 
       <a class="carousel-control-prev mp mobile" href="#demo" data-slide="prev">
@@ -307,7 +481,7 @@ UNDERDOGS CREW
 </div>
 <div class="row">
   <div class="offset-lg-3 col-lg-6 offset-md-3 col-md-6 offset-sm-3 col-sm-6">
-    <img class="img-fluid event_image" src="assets/poster1.png"/>
+    <img class="img-fluid event_image" src="assets/Events/poster1.png"/>
 </div>
 </div>
 </div>
