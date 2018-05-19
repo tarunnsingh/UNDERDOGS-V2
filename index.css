@@ -73,7 +73,7 @@ height:auto;
 }
 .members{
   position: relative;
-  height:650px;
+  height:600px;
   background-color:rgb(224, 187, 4);
 }
 .car-img{
@@ -81,6 +81,7 @@ height:auto;
   padding-right: 15px;
 }
 .mobile{
+  
   padding-top: 53px;
 }
 .mn{right:5%;}.mp{left:5%;}
@@ -175,6 +176,7 @@ height:auto;
   padding-top: 10px;
 }
 .mobile{
+
   padding-top: 50px;
 }
 .faq{
