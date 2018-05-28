@@ -1,6 +1,90 @@
 body{
-  overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100;
+  overflow-y: hidden;
 }
+a{
+  text-decoration: none !important;
+  color:inherit;
+}
+a:hover{
+  color:inherit;
+}
+
+/*loader*/
+.loading{
+  position: relative;
+  opacity:1;
+  background-image: url("assets/Front_page/white.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  z-index: 200;
+  width:150px;
+  height:150px;
+
+}
+.loadin{
+  overflow:auto;
+  border-radius: 50%;
+  position: relative;
+  top:25px;
+  z-index: 2;
+
+}
+.loadin1{
+  position: absolute;
+  opacity:1;
+  top:4px;
+  right:3%;
+  border-radius: 50%;
+  border: 8px dashed black;
+  padding:4px;
+  animation: spin 10s linear infinite;
+  width:140px;
+  height:140px;
+}
+@keyframes spin {
+100% {
+  transform: rotateZ(360deg);
+}}
+
+?
+/*BANNERS*/
+
+#banner-set{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.left-banner{
+
+  float:left;
+  background-color:black;
+  width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    transition: 0.8s all;
+}
+.right-banner{
+  width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right:0;
+    float:right;
+    background-color: black;
+    transition: 0.8s all;
+}
+
 /*FONTS*/
 .nav-link{
     font-family: 'Acme', sans-serif;
@@ -11,6 +95,14 @@ body{
 .btn-enroll{
   font-family: 'Permanent Marker', cursive;
 }
+.faq-ques{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+.faq-ans{
+  font-family: 'Caveat', cursive;
+}
+
 .card-text{
   font-family: 'Permanent Marker', cursive;
 }
@@ -27,38 +119,86 @@ font-family: 'Caveat', cursive;
 .quote{
 font-family: 'Caveat', cursive;
 }
+.coming-soon{
+  font-family: 'Caveat', cursive;
+}
+
+
 /*CSS*/
 
-
+#logo{
+display:block;
+  opacity:1;
+  transition: opacity 0.5s;
+}
   .brand-logo{
   color:white;
 }
 
 .navbar{
-  opacity:0.8;
+visibility: hidden;
   background-color: black !important;
+  opacity:0;
+  transition: opacity 0.5s;
 }
 
 .content-row{
-
+visibility: hidden;
   background-color: rgb(247, 249, 249);
+  opacity:0;
+  transition: opacity 0.5s;
 }
 .aboutus{
-  overflow-x: hidden;
+  visibility: hidden;
+
+  opacity:0;
+  transition: opacity 0.5s;
 }
-.members{
-  overflow-x: hidden;
+.member-section{
+  visibility: hidden;
+
 }
 .events{
+  visibility: hidden;
   overflow-x: hidden;
 }
 .foot{
+  visibility: hidden;
   overflow-x: hidden;
   box-shadow: 0px -4px rgba(0, 0, 0, 0.19);
 }
 .foot2{
+  visibility: hidden;
   overflow-x: hidden;
     box-shadow: 0px -10px rgba(0, 0, 0, 0.19);
+}
+#homerow{
+  visibility: hidden;
+  style.opacity="0";
+}
+#enroll-button{
+visibility: hidden;
+  style.opacity="0";
+}
+#top{
+  visibility: hidden;
+}
+#videogallery{
+  display:none;
+  position: relative;
+}
+.video-container{
+  position: absolute;
+  background-color: black;
+  color:white;
+  z-index: 50;
+  margin-left: 22%;
+  width:60%;
+  height:100px;
+
+}
+.coming-soon{
+  padding-top:35px;
 }
 
 .car-img{
@@ -67,13 +207,26 @@ font-family: 'Caveat', cursive;
 .car-b-img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 @media only screen and (min-width: 300px) and (max-width: 400px)
 {
+  .loading{
+    margin-top: 50%;
+  }
   #navbarLogo{
 width:180px;
 height:auto;
 
   }
+  .about_us_content{
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    font-family: 'Butterfly Kids', cursive;
+    font-size:23px;
+  }
+
   .fixing-space{
   background-color: rgb(247, 249, 249);
     height:92px;
@@ -88,9 +241,9 @@ height:auto;
 
 }
 .content{
-  text-align: center;
   position:relative;
-  left:20%;
+ margin-right: auto;
+ margin-left: auto;
 }
 .content-column-1{
   padding-top:45px;
@@ -105,9 +258,10 @@ height:auto;
   padding-bottom:45px;
   text-align: center;
 }
+
 .aboutus{
   position: relative;
-  height:400px;
+  height:60%;
   background-color: #4B77BE;
 }
 .members{
@@ -128,6 +282,12 @@ height:auto;
 .events{
   background-color: #C91F37;
   height:480px;
+
+}
+.event_image{
+  padding-left:10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 .faq{
 position:fixed;
@@ -136,15 +296,22 @@ margin-right: 10%;
   z-index: 100;
   width:80%;
   display: none;
-top:180px;
+top:95px;
+}
+.faq-ques{
+  position: relative;
+  width:100%;
+  height:auto;
+  overflow: scroll;
+  word-wrap: break-word;
 }
 .close_icon{
   position:fixed;
   z-index: 100;
-  top:183px;
+  top:98px;
   right:11%;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 .section-heading{
   padding-top:25px;
@@ -161,19 +328,31 @@ top:180px;
 }
 @media only screen and (min-width: 400px) and (max-width: 800px)
 {
+  .loading{
+    margin-top: 50%;
+  }
   .fixing-space{
       background-color: rgb(247, 249, 249);
     height:120px;
   }
 
+
   #navbarLogo{
 width:250px;
 height:auto;
   }
+  .about_us_content{
+    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    font-family: 'Butterfly Kids', cursive;
+    font-size:23px;
+  }
 .content{
-  text-align: center;
   position:relative;
-  left:25%;
+ margin-right: auto;
+ margin-left: auto;
 }
 .content-column-1{
   padding-top:45px;
@@ -188,9 +367,10 @@ height:auto;
   padding-bottom:45px;
   text-align: center;
 }
+
 .aboutus{
   position: relative;
-  height:400px;
+  height:60%;
   background-color: #4B77BE;
 
 }
@@ -234,7 +414,7 @@ top:270px;
   top:273px;
   right:11%;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 .section-heading{
   padding-top:45px;
@@ -251,6 +431,9 @@ top:270px;
 }
 @media only screen and (min-width: 801px) and (max-width: 1199px)
 {
+  .loading{
+    margin-top: 25%;
+  }
   .fixing-space{
       background-color: rgb(247, 249, 249);
     height:120px;
@@ -262,10 +445,18 @@ width:250px;
 height:auto;
 
   }
+  .about_us_content{
+    padding-top:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color:white;
+    font-family: 'Butterfly Kids', cursive;
+    font-size:23px;
+  }
 .content{
-  text-align: center;
   position:relative;
-  left:23%;
+ margin-right: auto;
+ margin-left: auto;
 }
 .content-column-1{
   padding-top:45px;
@@ -282,7 +473,7 @@ height:auto;
 }
 .aboutus{
   position: relative;
-  height:400px;
+  height:60%;
   background-color: #4B77BE;
 }
 .members{
@@ -301,9 +492,7 @@ height:auto;
   height:800px;
 
 }
-.event_image{
-  padding-top: 20px;
-}
+
 .big-screens{
   padding-top: 55px;
 }
@@ -333,7 +522,7 @@ top:270px;
   top:273px;
   right:11%;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 .section-heading{
   padding-top:85px;
@@ -347,9 +536,17 @@ top:270px;
   margin-top: 6%;
   left:10%
 }
+.quote{
+  color:white;
+  padding-top: 5px;
+  font-size: 13px;
+}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px)
 {
+  .loading{
+    margin-top: 23%;
+  }
   .gallery-heading{
     margin-left: ;
   }
@@ -364,10 +561,18 @@ width:300px;
 height:auto;
 
   }
+  .about_us_content{
+    padding-top:40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color:white;
+    font-family: 'Butterfly Kids', cursive;
+    font-size:23px;
+  }
 .content{
-  text-align: center;
   position:relative;
-  left:23%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .content-column-1{
   padding-top:45px;
@@ -419,9 +624,7 @@ height:auto;
 .row-foot{
   padding-top: 10px;
 }
-.event_image{
-  padding-top: 20px;
-}
+
 .faq{
 position:fixed;
 margin-left: 10%;
@@ -438,7 +641,7 @@ top:270px;
   top:273px;
   right:11%;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 .section-heading{
   padding-top:85px;
@@ -452,13 +655,15 @@ top:270px;
   margin-top: 6%;
   left:10%
 }
+.quote{
+  color:white;
+  padding-top: 5px;
+}
 }
 .section-heading{
   border-bottom: 3px solid white;
 }
-.content{
-  cursor: pointer;
-}
+
 
 
 .btn-enroll{
@@ -484,9 +689,13 @@ top:270px;
   opacity:1;
   background-color:white !important;
   color:black;
-
+  transition: color 0.5s;
+}
+.button-rules:hover{
+  color:grey;
 }
 .links{
+  transition: color 0.5s;
   color:white;
 }
 .conlist{
@@ -507,36 +716,42 @@ top:270px;
 .i3{
   color:white;
   transition: color 1s;
+  padding-right: 15px;
 }
+.i4{color:white;
+transition: color 1s;}
 .i1:hover{
 
-  color: blue;
+  color: #1F4788;
 }
 .i2:hover{
 
-  color:pink;
+  color:#C3272B;
 }
 .i3:hover{
 
-  color:red;
+  color:#FFA400;
 }
-.quote{
-  padding-top: 5px;
+.i4:hover{
+  color:#26A65B;
 }
 .foot2{
 background-color: #6C7A89;
 }
 .mlink1:hover{
 
-  color:blue;
+  color:#1F4788;
 }
 .mlink2:hover{
 
-  color:red;
+  color:#C3272B;
 }
 .mlink3:hover{
 
-  color:pink;
+  color:#FFA400;
+}
+.mlink4:hover{
+  color:#26A65B;
 }
 .mlinks{
   transition: color 1s;
@@ -545,9 +760,7 @@ background-color: #6C7A89;
 .links:hover{
   color:black;
 }
-.quote{
-  color: white;
-}
+
 .foot2-row{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -555,10 +768,17 @@ background-color: #6C7A89;
 .card-box{
 box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 transition: box-shadow 0.5s;
+cursor: pointer;
 }
 .card-box:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.close_icon:hover{
+  background-color: black;
+  color:white;
+}
+
 /* PHOTO GALLLERY SECTION*/
 
 #photogallery{

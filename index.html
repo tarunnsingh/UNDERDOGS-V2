@@ -17,10 +17,27 @@ UNDERDOGS CREW
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" integrity="sha384-DmABxgPhJN5jlTwituIyzIUk6oqyzf3+XuP7q3VfcWA2unxgim7OSSZKKf0KSsnh" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
 </head>
 
-<body  onload="">
+<body  onload="loader()">
+
+<!--LOADER-->
+
+  <div id="logo" class="text-center floating loading">
+    <img src="assets/Front_page/logo.jpg" class="loadin"/>
+    <img src="assets/Front_page/back.png" class="loadin1"/>
+  </div>
+
+
+<!--OPENING BANNERS-->
+<div id="banner-set">
+  <div class="left-banner"></div>
+  <div class="right-banner"></div>
+</div>
+
+<!--SPACE AT TOP TO PREVENT NAVBAR OVERALAPPING BODY-->
+
 <div class="fixing-space " id="top">
 </div>
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark" >
@@ -36,7 +53,7 @@ UNDERDOGS CREW
   <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
   <ul class="navbar-nav mx-auto text-center">
 
-    <li class="nav-item active"  data-toggle="collapse" data-target="#navbarTogglerDemo01">
+    <li class="nav-item "  data-toggle="collapse" data-target="#navbarTogglerDemo01">
       <a class="nav-link smooth-scroll" href="#top"  >HOME</a>
     </li>
     <li class="nav-item " data-toggle="collapse" data-target="#navbarTogglerDemo01">
@@ -57,7 +74,8 @@ UNDERDOGS CREW
 </nav>
 
 
-  <div class="row">
+  <div class="row" id="homerow">
+
 <div class="col-md-12 ">
 <div class="introduction">
   <img  class="img-fluid introim" src="assets/Front_page/introimg.jpeg"/>
@@ -67,95 +85,103 @@ UNDERDOGS CREW
 </div>
 
 <div class="row content-row">
-    <div class="col-md-4 col-sm-4 content-column-1">
-      <div class="card content card-box" style="width: 13rem;">
-               <img class="card-img-top" src="assets/Front_page/n3.jpg" alt="Card image cap">
+    <div class="col-sm-4 col-md-4  content-column-1  ">
+      <div class="card content card-box " style="width: 13rem;">
+              <a  onclick="videos()"  class="smooth-scroll" > <img class="card-img-top" src="assets/Front_page/n3.jpg" alt="Card image cap">
            <div class="card-body">
     <p class="card-text">VIDEOS</p>
   </div>
-</div>
+</div></a>
     </div>
 
-    <div class="col-md-4 col-sm-4 content-column-2">
-      <div onclick="faq()" class="card content card-box" style="width: 13rem;">
-               <img class="card-img-top" src="assets/Front_page/n1.jpg" alt="Card image cap">
+    <div class="col-md-4 col-sm-4 content-column-2  ">
+      <div onclick="faq()" class="card content card-box text-center"  style="width: 13rem;">
+              <a href="#faq-section" class="smooth-scroll"> <img class="card-img-top" src="assets/Front_page/n1.jpg" alt="Card image cap">
             <div class="card-body"><p class="card-text">FAQ'S</p>
   </div>
-</div>
+</div></a>
     </div>
 
-    <div class="col-md-4 col-sm-4 content-column-3">
-      <div onclick="gallery()" class="card content card-box" style="width: 13rem;">
-              <img class="card-img-top" src="assets/Front_page/n4.jpg" alt="Card image cap">
+    <div class="col-md-4 col-sm-4 content-column-3  ">
+    <div  class="card content card-box text-center" style="width: 13rem;">
+              <a href="#photogallery" class="smooth-scroll" onclick="gallery()">  <img class="card-img-top" src="assets/Front_page/n4.jpg" alt="Card image cap">
            <div class="card-body">
     <p class="card-text">GALLERY</p>
   </div>
-</div>
-</div>
+</div></a>
 </div>
 </div>
 
-<div class="faq ">
+
+<div class="faq" id="faq-section">
   <span onclick="close_faq()"><i class="fas fa-times close_icon"></i></span>
-  <div class="accordion text-center" id="accordionExample">
-  <div class="card colp-card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          QUESTION 1
-        </button>
-      </h5>
-    </div>
 
-    <div id="collapseOne" class="collapse show colp-body" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-      ANSWER 1
-      </div>
-    </div>
-  </div>
-  <div class="card colp-card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        QUESTION 2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body colp-body">
-        ANSWER 2
-      </div>
-    </div>
-  </div>
-  <div class="card colp-card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          QUESTION 3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body colp-body">
-        ANSWER 3
-      </div>
-    </div>
-  </div>
+  <div id="accordion">
+   <div class="card">
+     <div class="card-header">
+       <a class="card-link faq-ques" data-toggle="collapse" href="#collapseOne">
+        Does the crew focus on some particular dance styles only?
+       </a>
+     </div>
+     <div id="collapseOne" class="collapse show" data-parent="#accordion">
+       <div class="card-body faq-ans">
+         We try to be versatile in our performances and would love to have dancers with different fortes.
+       </div>
+     </div>
+</div>
 
-  <div class="card colp-card">
-    <div class="card-header" id="headingFour">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          QUESTION 4
-        </button>
-      </h5>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body colp-body">
-        ANSWER 4
-      </div>
-    </div>
-  </div>
+   <div class="card">
+     <div class="card-header">
+       <a class="collapsed card-link faq-ques" data-toggle="collapse" href="#collapseTwo">
+       How often does the crew have rehearsals and what are the timings?
+     </a>
+     </div>
+     <div id="collapseTwo" class="collapse" data-parent="#accordion">
+       <div class="card-body faq-ans">
+         Rehearsals are held on weekdays. All the crew members are supposed to report for practice as soon as their classes end or latest by 5:00 pm sharp. There are rehearsals on weekends outside the college premises when preparing for competitions.
+       </div>
+     </div>
+</div>
+
+   <div class="card">
+     <div class="card-header">
+       <a class="collapsed card-link faq-ques" data-toggle="collapse" href="#collapseThree">
+        When will the Auditions be held?
+       </a>
+     </div>
+     <div id="collapseThree" class="collapse" data-parent="#accordion">
+       <div class="card-body faq-ans">
+         Auditions are open to university students only. Prior information will be provided regarding the date and timings. An audition is supposed to be at least one minute long. Performer can showcase any dance style.
+       </div>
+     </div>
+</div>
+
+   <div class="card">
+     <div class="card-header">
+       <a class="collapsed card-link faq-ques" data-toggle="collapse" href="#collapseFour">
+         Who will bear the expenses for the Crew Jersey?
+       </a>
+     </div>
+     <div id="collapseFour" class="collapse" data-parent="#accordion">
+       <div class="card-body faq-ans">
+        The crew members pay for the complete jersey and purchase it themselves.
+       </div>
+     </div>
+</div>
+
+   <div class="card">
+     <div class="card-header">
+       <a class="collapsed card-link faq-ques" data-toggle="collapse" href="#collapseFive">
+        Is UDC a part of the University's Cultural Club or Society?
+       </a>
+     </div>
+     <div id="collapseFive" class="collapse" data-parent="#accordion">
+       <div class="card-body faq-ans">
+        No, we're not a part of any cultural club. Crew members are not restricted to be a part of any club, but an individual cannot be a part of some other *crew* being a part of UDC.
+     </div>
+   </div>
+</div>
+
 </div>
 </div>
 
@@ -164,8 +190,9 @@ UNDERDOGS CREW
 
 <div class="text-center" id="photogallery" class="gallery">
 <img src="assets/page one/header.png" class="img-fluid text-center gallery-heading"/>
-<span onclick="close_gallery()"><i class="back-to-front-from-gallery fas fa-arrow-circle-left "></i></span><br/>
+<a href="#enroll-button" class="smooth-scroll"><span onclick="close_gallery()"><i class="back-to-front-from-gallery fas fa-arrow-circle-left "></i></span></a><br/>
 <div class="container-fluid gallery-container" id="p1">
+
 <div class="row gallery-row">
 
   <div class="col-lg-4 col-md-4 col-sm-4">
@@ -192,6 +219,7 @@ UNDERDOGS CREW
 </div>
 
 </div>
+
 <div class="row gallery-row">
 
 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -208,6 +236,7 @@ UNDERDOGS CREW
 </div>
 
 <div class="container-fluid gallery-container" id="p2">
+
 <div class="row gallery-row">
 
   <div class="col-lg-4 col-md-4 col-sm-4">
@@ -221,6 +250,7 @@ UNDERDOGS CREW
 </div>
 
 </div>
+
 <div class="row gallery-row">
 
 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -234,6 +264,7 @@ UNDERDOGS CREW
 </div>
 
 </div>
+
 <div class="row gallery-row">
 
 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -251,27 +282,34 @@ UNDERDOGS CREW
 
 <ul class="pagin text-center">
 
-
+<a href="#photogallery" class="smooth-scroll">
 <li class="pagin-element ele1" onclick="leftgallery()">
 <i class="fas fa-caret-left pagin-icons " ></i>
-</li>
-
-<li class="pagin-element ele2 " onclick="g1()"><a>1</a>
-</li>
-
-<li class="pagin-element ele3" onclick="g2()"><a>2</a>
-</li>
-
+</li></a>
+<a href="#photogallery" class="smooth-scroll">
+<li class="pagin-element ele2 " onclick="g1()">1
+</li></a>
+<a href="#photogallery" class="smooth-scroll">
+<li class="pagin-element ele3" onclick="g2()">2
+</li></a>
+<a href="#photogallery" class="smooth-scroll">
 <li class="pagin-element ele4" onclick="rightgallery()"><i class="fas fa-caret-right pagin-icons"></i>
-</li>
+</li></a>
 
 </ul>
 <br/>
 </div>
 
+<!--VIDEO GALLERY-->
+<div id="videogallery">
+<div  class="video-container text-center" >
+  <span ><h3 class="coming-soon ">COMING SOON  <span class="dot">.</span></h3></span>
+</div></div>
+
+
 <!--front page continued-->
 
-<div class="row">
+<div class="row" id="enroll-button">
   <a target="_blank" type="button" href="https://goo.gl/forms/bdUIL4Gq4HWSz3Xk1" class="btn btn-lg btn-block btn-enroll">ENROLL NOW</a>
 </div>
 
@@ -280,14 +318,18 @@ UNDERDOGS CREW
   <div class="offset-md-4 col-md-4 ">
 <span ><h2 class="section-heading text-center">ABOUT US</h2></span>
 </div>
+<div class="container-fluid ">
+<p class="about_us_content">''UnderDogs'' the name, the dream of these three friends who were stabbed by winning and loosing, friendships and relationships and professionalism. Our founders are already coming from a well known group which gave them alot of experiences, adventures, guidence, love, friendships and heartbreaks. They have seen the up's and down's, pros and cons of the crew and so they know how to lead it.
+This crew was formed in 2017 by Mr. Pranjal kulshreshtha, Ms. Aishwarya Chandra and Mr. Vandit Rai with a goal to encourage the passion of dance in our campus i.e. Amity University (Lucknow).
+'UnderDogs' is a name which can be underestimated by many of them out there but at the same time rebel is what they prove to be. The members of the group are from various streams and speciality, whether it's contemporary, urban, old school hip hop, b-boying, popping, etc.
+</p></div>
 </div>
 
-<div class="row">
-  <div class="offset-lg-2 col-lg-8">
-    <p></p>
-  </div>
-</div>
-</div>
+
+<!--MEMBERS SECTION-->
+
+
+<div class="member-section">
 
 <div id="s2" class=" members">
 <div class="row">
@@ -325,7 +367,7 @@ UNDERDOGS CREW
             <img class="img-fluid car-img" src="assets/Members/m7.jpeg" alt="ankita singh">
           </div>
           <div class="carousel-item text-center">
-            <img class="img-fluid car-img" src="assets/Members/m8.jpeg" alt="nikita negi">
+            <img class="img-fluid car-img" src="assets/Members/m8.png" alt="nikita negi">
           </div>
           <div class="carousel-item text-center">
             <img class="img-fluid car-img " src="assets/Members/m9.jpeg" alt="anjali kukreja">
@@ -347,9 +389,6 @@ UNDERDOGS CREW
           </div>
           <div class="carousel-item text-center">
             <img class="img-fluid car-img " src="assets/Members/m15.jpeg" alt="akansha chaturvedi">
-          </div>
-          <div class="carousel-item text-center">
-            <img class="img-fluid car-img " src="assets/Members/m16.jpeg" alt="">
           </div>
 
         </div>
@@ -408,7 +447,7 @@ UNDERDOGS CREW
         <img class="img-fluid car-b-img" src="assets/Members/m7.jpeg" alt="ankita singh">
       </div>
       <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-        <img class="img-fluid car-b-img" src="assets/Members/m8.jpeg" alt="anushree bansal">
+        <img class="img-fluid car-b-img" src="assets/Members/m8.png" alt="nikita negi">
       </div>
         </div>
 
@@ -451,9 +490,7 @@ UNDERDOGS CREW
         <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
       <img class="img-fluid car-b-img" src="assets/Members/m15.jpeg" alt="akansha chaturvedi">
     </div>
-    <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3">
-      <img class="img-fluid car-b-img" src="assets/Members/m15.jpeg" alt="">
-    </div>
+
       </div>
 
       </div>
@@ -472,7 +509,7 @@ UNDERDOGS CREW
 </div>
 </div>
 </div>
-
+</div>
 
 <!--EVENT SECTION-->
 <div id="s3" class="events ">
@@ -518,9 +555,9 @@ UNDERDOGS CREW
                   <h5 class="foot-head">Quick Links</h5>
                   <address>
                     <ul class="list-unstyled">
-                      <li><a class="links" class="links" href="https://udbuddy.herokuapp.com/about">About Us</a></li>
-                      <li><a class="links" href="https://udbuddy.herokuapp.com/blogDemo">Gallery</a></li>
-                      <li><a class="links" href="https://udbuddy.herokuapp.com/wofDemo">Videos</a></li>
+                      <li><a onclick="videos()" class="smooth-scroll links" href="#videogallery">Videos</a></li>
+                      <li><a onclick="faq()" class="smooth-scroll links" class="links" href="#aboutus">FAQ'S</a></li>
+                      <li><a onclick="gallery()"class="smooth-scroll links" href="#photogallery">Gallery</a></li>
                     </ul>
                   </address>
 
@@ -531,9 +568,10 @@ UNDERDOGS CREW
                   <h5 class="foot-head">Stay Connected</h5>
                   <ul class="list-unstyled conlist">
                     <li>
-                      <a href="https://www.facebook.com/Underdogscr/?ref=br_rs" ><i class="i1   fab fa-facebook-f fa-2x"></i></a>
-                    <a href="mailto:pande.akshat21@gmail.com" ><i class="i2  fa fa-envelope fa-2x"></i></a>
-                    <a href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="i3  fab fa-instagram fa-2x"></i></a>
+                      <a target="_blank" href="https://www.facebook.com/Underdogscr/?ref=br_rs" ><i class="i1   fab fa-facebook-f fa-2x"></i></a>
+                    <a target="_blank" href="mailto:pande.akshat21@gmail.com" ><i class="i2  fa fa-envelope fa-2x"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="i3  fab fa-instagram fa-2x"></i></a>
+                      <a  href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="i4  fas fa-phone fa-2x"></i></a>
                     </li>
                 </ul>
 
@@ -550,23 +588,29 @@ UNDERDOGS CREW
 <div id="mobile-foot" class="foot2 " >
 
     <div  class="row foot2-row">
-      <div class="col-4 text-center">
-        <a href="https://www.facebook.com/Underdogscr/?ref=br_rs" data-applink="fb://profile/125302418117168" ><i class="mlink1 mlinks fab fa-facebook-f fa-2x text-center"></i></a>
 
+      <div class="col-3 text-center">
+        <a target="_blank" href="https://www.facebook.com/Underdogscr/?ref=br_rs" data-applink="fb://profile/125302418117168" ><i class="mlink1 mlinks fab fa-facebook-f fa-2x text-center"></i></a>
       </div>
-      <div class="col-4 text-center">
 
-  <a href="mailto:pande.akshat21@gmail.com" ><i class="mlink2 mlinks fa fa-envelope fa-2x text-center"></i></a>
+      <div class="col-3 text-center">
+        <a target="_blank" href="mailto:pande.akshat21@gmail.com" ><i class="mlink2 mlinks fa fa-envelope fa-2x text-center"></i></a>
       </div>
-      <div class="col-4 text-center">
 
-<a href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="mlink3 mlinks fab fa-instagram fa-2x "></i></a>
+      <div class="col-3 text-center">
+        <a target="_blank" href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="mlink3 mlinks fab fa-instagram fa-2x "></i></a>
       </div>
+
+      <div class="col-3 text-center">
+       <a href="https://www.instagram.com/theunderdogscrew_/?hl=en" ><i class="mlink4 mlinks fas fa-phone fa-2x "></i></a>
+      </div>
+
     </div>
 </div>
 </footer>
 
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.3.js"></script>

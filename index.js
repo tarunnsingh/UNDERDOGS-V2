@@ -1,7 +1,46 @@
+function loader(){
+document.getElementById("logo").style.display="none";
+open_banner();
+setTimeout(home,350);
+}
+
+function open_banner(){
+  document.getElementsByClassName("left-banner")[0].style.width="0";
+  document.getElementsByClassName("right-banner")[0].style.width="0";
+}
+
+
+function home(){
+   document.getElementById("top").style.visibility="visible";
+      document.getElementsByClassName("navbar")[0].style.visibility="visible";
+      document.getElementById("homerow").style.visibility="visible";
+        document.getElementsByClassName("content-row")[0].style.visibility="visible";
+          document.getElementsByClassName("aboutus")[0].style.visibility="visible";
+            document.getElementsByClassName("member-section")[0].style.visibility="visible";
+              document.getElementsByClassName("events")[0].style.visibility="visible";
+                document.getElementsByClassName("foot")[0].style.visibility="visible";
+                document.getElementsByClassName("foot2")[0].style.visibility="visible";
+                   document.getElementById("enroll-button").style.visibility="visible";
+                   document.getElementsByClassName("navbar")[0].style.opacity="0.8";
+                   document.getElementById("homerow").style.opacity="1";
+                     document.getElementsByClassName("content-row")[0].style.opacity="1";
+                       document.getElementsByClassName("aboutus")[0].style.opacity="1";
+                       document.getElementById("enroll-button").style.opacity="1";
+                       document.getElementsByTagName("BODY")[0].style.overflowY="initial";
+}
+
+
+
 if(screen.width>800)
 {
   document.getElementsByClassName("mobile")[0].style.display="none";
     document.getElementById("mobile-foot").style.display="none";
+    var j=0;
+    while(j<5)
+    {
+    document.getElementsByClassName("nav-item")[j].removeAttribute("data-toggle");
+    j++;
+  }
 }
 else{
   document.getElementsByClassName("big-screens")[0].style.display="none";
@@ -48,6 +87,27 @@ function close_gallery(){
     document.getElementsByClassName("navbar")[0].style.opacity="1";
 }
 
+function videos(){
+  document.getElementsByClassName("introim")[0].style.opacity="0.5";
+    document.getElementsByClassName("navbar")[0].style.opacity="0.5";
+  document.getElementsByClassName("content-row")[0].style.opacity="0.5";
+  document.getElementsByClassName("members")[0].style.opacity="0.5";
+  document.getElementsByClassName("events")[0].style.opacity="0.5";
+   document.getElementsByClassName("foot")[0].style.opacity="0.5";
+  document.getElementById("videogallery").style.display="block";
+  videogal();
+}
+
+function close_videos(){
+  document.getElementsByClassName("introim")[0].style.opacity="1";
+  document.getElementsByClassName("content-row")[0].style.opacity="1";
+  document.getElementsByClassName("members")[0].style.opacity="1";
+  document.getElementsByClassName("events")[0].style.opacity="1";
+   document.getElementsByClassName("foot")[0].style.opacity="1";
+    document.getElementById("videogallery").style.display="none";
+    document.getElementsByClassName("navbar")[0].style.opacity="1";
+}
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
 $(".smooth-scroll").click(function (event) {
@@ -65,16 +125,14 @@ $(".smooth-scroll").click(function (event) {
       if(screen.width>800)
       {
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 70
-      }, 800, function(){
-
-        });
+        scrollTop: $(hash).offset().top - 90
+      }, 800);
     }
 
     if(screen.width<400)
     {
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 90
+      scrollTop: $(hash).offset().top - 70
     }, 800, function(){
 
       });
@@ -134,4 +192,18 @@ function rightgallery(){
   {
     g2();
   }
+}
+function videogal() {
+    var dot = document.getElementsByClassName("dot")[0];
+    setInterval(function dots(){
+
+    if(dot.innerHTML.length > 4)
+    {
+    dot.innerHTML="";
+}
+    else
+
+       dot.innerHTML+=".";
+     },600);
+     setTimeout(close_videos,5800);
 }
