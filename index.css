@@ -4,6 +4,7 @@ body{
   width: 100%;
   height: 100;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none !important;
@@ -173,8 +174,34 @@ visibility: hidden;
     box-shadow: 0px -10px rgba(0, 0, 0, 0.19);
 }
 #homerow{
+  position: relative;
   visibility: hidden;
   style.opacity="0";
+}
+.intro-msg-box{
+  display:block;
+  position: absolute;
+  top:18%;
+  right:6%;
+  width:400px;
+  height:0px;
+  background-color: black;
+  opacity:0;
+  overflow: hidden;
+  padding-top: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1s;
+    transform: rotateZ(0deg);
+}
+.intro-msg{
+  font-family: 'Caveat', cursive;
+  font-size: 1.2em;
+  opacity: 1;
+  color:white;
+  word-spacing: 0.20em;
 }
 #enroll-button{
 visibility: hidden;
@@ -183,6 +210,7 @@ visibility: hidden;
 #top{
   visibility: hidden;
 }
+
 #videogallery{
   display:none;
   position: relative;
@@ -475,6 +503,7 @@ height:auto;
   position: relative;
   height:60%;
   background-color: #4B77BE;
+  word-spacing: 0.20em;
 }
 .members{
   position: relative;
@@ -590,7 +619,7 @@ height:auto;
 .aboutus{
 
   position: relative;
-
+word-spacing: 0.20em;
   height:400px;
   background-color: #4B77BE;
 }
@@ -778,6 +807,50 @@ cursor: pointer;
   background-color: black;
   color:white;
 }
+.phone-number-box{
+  position: relative;
+  background-color: black;
+right: 0px;
+  width:100%;
+
+}
+.phone-number{
+  font-size: 11px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+ font-family: 'Acme', sans-serif;
+ right:0px;
+  padding-top:15px;
+ background-color: black;
+  height:60px;
+  width:0px;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  word-spacing: 0.25em;
+  transition: all 1s;
+  opacity: 1;
+  white-space: nowrap;
+}
+.mobile-phone-number{
+
+position: absolute;
+opacity: 0;
+display: block;
+overflow: hidden;
+position: absolute;
+border-radius: 5px;
+word-spacing: 1em;
+background-color: black;
+height:30px;
+width:70px;
+padding: 3px;
+color:white;
+right:10px;
+bottom:10px;
+transition: opacity 1s;
+}
 
 /* PHOTO GALLLERY SECTION*/
 
@@ -791,7 +864,7 @@ display:none;
 }
 .gallery{
 
-position: fixed;
+position: relative;
   margin-left: 10%;
   margin-right: 10%;
     z-index: 100;

@@ -27,7 +27,29 @@ function home(){
                        document.getElementsByClassName("aboutus")[0].style.opacity="1";
                        document.getElementById("enroll-button").style.opacity="1";
                        document.getElementsByTagName("BODY")[0].style.overflowY="initial";
+                       document.getElementsByClassName("intro-msg-box")[0].style.opacity="0.8";
+                       document.getElementsByClassName("intro-msg-box")[0].style.transform="rotateZ(360deg)";
+                       document.getElementsByClassName("intro-msg-box")[0].style.height="365px";
+
 }
+
+//REMOVING INTRO BOX ON scroll
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  if(scroll>150)
+  {
+    document.getElementsByClassName("intro-msg-box")[0].style.opacity="0";
+    document.getElementsByClassName("intro-msg-box")[0].style.transform="rotateZ(0deg)";
+    document.getElementsByClassName("intro-msg-box")[0].style.height="0px";
+  }
+
+  else{
+  document.getElementsByClassName("intro-msg-box")[0].style.opacity="0.8";
+  document.getElementsByClassName("intro-msg-box")[0].style.transform="rotateZ(360deg)";
+  document.getElementsByClassName("intro-msg-box")[0].style.height="365px";
+}
+});
 
 
 
@@ -41,10 +63,13 @@ if(screen.width>800)
     document.getElementsByClassName("nav-item")[j].removeAttribute("data-toggle");
     j++;
   }
+  document.getElementsByClassName("videog")[0].removeAttribute("href");
 }
 else{
+  document.getElementsByClassName("intro-msg-box")[0].style.display="none";
   document.getElementsByClassName("big-screens")[0].style.display="none";
   document.getElementsByClassName("big-screens")[1].style.display="none";
+  document.getElementsByClassName("videog")[0].setAttribute("href","#videogallery");
 }
 
 function faq(){
@@ -206,4 +231,29 @@ function videogal() {
        dot.innerHTML+=".";
      },600);
      setTimeout(close_videos,5800);
+}
+
+//expanding phone-number box
+ var k=1;
+function phone_numbers()
+{  if(k%2!=0)
+  {
+    document.getElementsByClassName("phone-number")[0].style.opacity="1";
+  document.getElementsByClassName("phone-number")[0].style.width="400px";
+}
+  else{
+
+    document.getElementsByClassName("phone-number")[0].style.opacity="0";
+    document.getElementsByClassName("phone-number")[0].style.width="0px";
+}
+  k++;
+}
+
+function gender(){
+  if(k%2!=0)
+  document.getElementsByClassName("mobile-phone-number")[0].style.opacity="1";
+
+  else
+      document.getElementsByClassName("mobile-phone-number")[0].style.opacity="0";
+  k++;
 }
