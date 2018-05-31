@@ -3,7 +3,7 @@ body{
   padding: 0;
   width: 100%;
   height: 100;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 a{
@@ -13,6 +13,7 @@ a{
 a:hover{
   color:inherit;
 }
+
 
 /*loader*/
 .loading{
@@ -145,30 +146,35 @@ visibility: hidden;
 
 .content-row{
 visibility: hidden;
+width:100% !important;
   background-color: rgb(247, 249, 249);
   opacity:0;
+  position:relative;
   transition: opacity 0.5s;
 }
 .aboutus{
   visibility: hidden;
-
+width:100%;
   opacity:0;
   transition: opacity 0.5s;
 }
 .member-section{
   visibility: hidden;
-
+width:100%;
 }
 .events{
+  width:100%;
   visibility: hidden;
   overflow-x: hidden;
 }
 .foot{
+  width:100%;
   visibility: hidden;
   overflow-x: hidden;
   box-shadow: 0px -4px rgba(0, 0, 0, 0.19);
 }
 .foot2{
+  width:100%;
   visibility: hidden;
   overflow-x: hidden;
     box-shadow: 0px -10px rgba(0, 0, 0, 0.19);
@@ -178,31 +184,7 @@ visibility: hidden;
   visibility: hidden;
   style.opacity="0";
 }
-.intro-msg-box{
-  display:block;
-  position: absolute;
-  top:18%;
-  right:6%;
-  width:400px;
-  height:0px;
-  background-color: black;
-  opacity:0;
-  overflow: hidden;
-  padding-top: 4%;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 1s;
-    transform: rotateZ(0deg);
-}
-.intro-msg{
-  font-family: 'Caveat', cursive;
-  font-size: 1.2em;
-  opacity: 1;
-  color:white;
-  word-spacing: 0.20em;
-}
+
 #enroll-button{
 visibility: hidden;
   style.opacity="0";
@@ -245,6 +227,12 @@ visibility: hidden;
 width:180px;
 height:auto;
 
+  }
+  .intro-msg-box{
+    display:none;
+  }
+  .content-row{
+    left:4.5%;
   }
   .about_us_content{
     padding-top:10px;
@@ -345,13 +333,23 @@ top:95px;
   padding-top:25px;
   color:white;
 }
+/*GALLERY CSS*/
+.pagin{
+  position: relative;
+  right:20px;
+}
 .back-to-front-from-gallery{
-  cursor: pointer;
-  font-size:25px;
+  display:none;
+}
+.back-to-front-from-gallery-mobile{
+  position:relative;
+  float:right;
   color:white;
-  position: absolute;
-  margin-top: 18%;
-  left:90%
+  right:5px;
+}
+.back-to-front-from-gallery-mobile:hover{
+  background-color: white;
+  color:black;
 }
 }
 @media only screen and (min-width: 400px) and (max-width: 800px)
@@ -368,6 +366,12 @@ top:95px;
   #navbarLogo{
 width:250px;
 height:auto;
+  }
+  .intro-msg-box{
+    display:none;
+  }
+  .content-row{
+    left:4.2%;
   }
   .about_us_content{
     padding-top:20px;
@@ -448,13 +452,21 @@ top:270px;
   padding-top:45px;
   color:white;
 }
+/*GALLERY CSS*/
+.pagin{right:20px;
+}
 .back-to-front-from-gallery{
-  cursor: pointer;
-  font-size:25px;
+  display: none;
+}
+.back-to-front-from-gallery-mobile{
+  position:relative;
+  float:right;
   color:white;
-  position: absolute;
-  margin-top: 18%;
-  left:90%
+  right:5px;
+}
+.back-to-front-from-gallery-mobile:hover{
+  background-color: white;
+  color:black;
 }
 }
 @media only screen and (min-width: 801px) and (max-width: 1199px)
@@ -472,6 +484,34 @@ top:270px;
 width:250px;
 height:auto;
 
+  }
+  .intro-msg-box{
+    display:block;
+    position: absolute;
+    top:18%;
+    right:6%;
+    width:400px;
+    height:0px;
+    background-color: black;
+    opacity:0;
+    overflow: hidden;
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: all 1s;
+      transform: rotateZ(0deg);
+  }
+  .intro-msg{
+    font-family: 'Caveat', cursive;
+    font-size: 1.2em;
+    opacity: 1;
+    color:white;
+    word-spacing: 0.20em;
+  }
+  .content-row{
+    left:1.5%;
   }
   .about_us_content{
     padding-top:20px;
@@ -563,16 +603,21 @@ top:270px;
   color:white;
   position: absolute;
   margin-top: 6%;
-  left:10%
+  left:10%;
+  display:block;
 }
 .quote{
   color:white;
   padding-top: 5px;
   font-size: 13px;
 }
+/*GALLERY CSS*/
+.pagin{right:2.5%;
+}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px)
 {
+
   .loading{
     margin-top: 23%;
   }
@@ -589,6 +634,34 @@ top:270px;
 width:300px;
 height:auto;
 
+  }
+  .intro-msg-box{
+    display:block;
+    position: absolute;
+    top:18%;
+    right:6%;
+    width:400px;
+    height:0px;
+    background-color: black;
+    opacity:0;
+    overflow: hidden;
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: all 1s;
+      transform: rotateZ(0deg);
+  }
+  .intro-msg{
+    font-family: 'Caveat', cursive;
+    font-size: 1.2em;
+    opacity: 1;
+    color:white;
+    word-spacing: 0.20em;
+  }
+  .content-row{
+    left:1%;
   }
   .about_us_content{
     padding-top:40px;
@@ -682,11 +755,17 @@ top:270px;
   color:white;
   position: absolute;
   margin-top: 6%;
-  left:10%
+  left:10%;
+  display: block;
 }
 .quote{
   color:white;
   padding-top: 5px;
+
+  /*GALLERY CSS*/
+.pagin{right:5%;
+}
+
 }
 }
 .section-heading{
@@ -857,19 +936,11 @@ transition: opacity 1s;
 #photogallery{
 
 display:none;
-
+width:100%;
   background-color:#000000;
   vertical-align: middle;
 
 }
-.gallery{
-
-position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
-    z-index: 100;
-    width:80%;
-  top:180px;
 
 
 }
@@ -887,10 +958,13 @@ padding: 15px;
 
 }
   .pagin{
+    width: 100%;
+    position: relative;
     padding-top: 25px;
     color:white;
 list-style-type: none;
   display: block;
+
 }
 .gallery-row{
   padding: 10px;
@@ -909,6 +983,7 @@ list-style-type: none;
 .gallery-heading{
   color:white;
 }
+
 .pagin-element{
   display: inline-block;
   font-size: 25px;

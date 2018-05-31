@@ -64,9 +64,10 @@ if(screen.width>800)
     j++;
   }
   document.getElementsByClassName("videog")[0].removeAttribute("href");
+  document.body.removeAttribute("onscroll");
 }
 else{
-  document.getElementsByClassName("intro-msg-box")[0].style.display="none";
+
   document.getElementsByClassName("big-screens")[0].style.display="none";
   document.getElementsByClassName("big-screens")[1].style.display="none";
   document.getElementsByClassName("videog")[0].setAttribute("href","#videogallery");
@@ -97,6 +98,7 @@ function gallery(){
   document.getElementsByClassName("introim")[0].style.opacity="0.5";
     document.getElementsByClassName("navbar")[0].style.opacity="0.5";
   document.getElementsByClassName("content-row")[0].style.opacity="0.5";
+  document.getElementsByClassName("aboutus")[0].style.opacity="0.5";
   document.getElementsByClassName("members")[0].style.opacity="0.5";
   document.getElementsByClassName("events")[0].style.opacity="0.5";
    document.getElementsByClassName("foot")[0].style.opacity="0.5";
@@ -106,10 +108,12 @@ function close_gallery(){
   document.getElementsByClassName("introim")[0].style.opacity="1";
   document.getElementsByClassName("content-row")[0].style.opacity="1";
   document.getElementsByClassName("members")[0].style.opacity="1";
+  document.getElementsByClassName("aboutus")[0].style.opacity="1";
   document.getElementsByClassName("events")[0].style.opacity="1";
    document.getElementsByClassName("foot")[0].style.opacity="1";
-    document.getElementById("photogallery").style.display="none";
+  document.getElementById("photogallery").style.display="none";
     document.getElementsByClassName("navbar")[0].style.opacity="1";
+
 }
 
 function videos(){

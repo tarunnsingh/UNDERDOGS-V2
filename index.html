@@ -20,7 +20,7 @@ UNDERDOGS CREW
 <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
 </head>
 
-<body  onload="loader()" onscroll="scroll_intro()">
+<body  onload="loader()" >
 
 <!--LOADER-->
 
@@ -89,7 +89,7 @@ UNDERDOGS CREW
 </div>
 
 <div class="row content-row">
-    <div class="col-sm-4 col-md-4  content-column-1  ">
+    <div class="col-lg-4 col-sm-4 col-md-4  content-columns content-column-1  ">
       <div class="card content card-box " style="width: 13rem;">
               <a  onclick="videos()" href="#"  class="videog smooth-scroll" > <img class="card-img-top" src="assets/Front_page/n3.jpg" alt="Card image cap">
            <div class="card-body">
@@ -98,7 +98,7 @@ UNDERDOGS CREW
 </div></a>
     </div>
 
-    <div class="col-md-4 col-sm-4 content-column-2  ">
+    <div class="col-lg-4 col-md-4 col-sm-4  content-columns content-column-2  ">
       <div onclick="faq()" class="card content card-box text-center"  style="width: 13rem;">
               <a href="#faq-section" class="smooth-scroll"> <img class="card-img-top" src="assets/Front_page/n1.jpg" alt="Card image cap">
             <div class="card-body"><p class="card-text">FAQ'S</p>
@@ -106,7 +106,7 @@ UNDERDOGS CREW
 </div></a>
     </div>
 
-    <div class="col-md-4 col-sm-4 content-column-3  ">
+    <div class="col-lg-4 col-md-4 col-sm-4 content-column-3  ">
     <div  class="card content card-box text-center" style="width: 13rem;">
               <a href="#photogallery" class="smooth-scroll" onclick="gallery()">  <img class="card-img-top" src="assets/Front_page/n4.jpg" alt="Card image cap">
            <div class="card-body">
@@ -192,9 +192,10 @@ UNDERDOGS CREW
 
 <!--PHOTO GALLERY-->
 
-<div class="text-center" id="photogallery" class="gallery">
+<div class="text-center" id="photogallery" >
+  <a onclick="close_gallery()" class="smooth-scroll "> <span ><i class=" fas fa-times back-to-front-from-gallery-mobile"></i></span></a>
 <img src="assets/page one/header.png" class="img-fluid text-center gallery-heading"/>
-<a href="#enroll-button" class="smooth-scroll"><span onclick="close_gallery()"><i class="back-to-front-from-gallery fas fa-arrow-circle-left "></i></span></a><br/>
+<a  onclick="close_gallery()" class="back-to-front-from-gallery smooth-scroll"><i class=" fas fa-arrow-circle-left "></i></a>
 <div class="container-fluid gallery-container" id="p1">
 
 <div class="row gallery-row">
@@ -284,7 +285,8 @@ UNDERDOGS CREW
 </div>
 </div>
 
-<ul class="pagin text-center">
+
+<ul class="pagin ">
 
 <a href="#photogallery" class="smooth-scroll">
 <li class="pagin-element ele1" onclick="leftgallery()">
@@ -301,6 +303,7 @@ UNDERDOGS CREW
 </li></a>
 
 </ul>
+
 <br/>
 </div>
 
