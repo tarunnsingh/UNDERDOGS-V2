@@ -3,7 +3,7 @@ body{
   padding: 0;
   width: 100vw;
   height: 100;
-  overflow-y: auto;
+  overflow-y:hidden;
   overflow-x: hidden;
 }
 a{
@@ -160,6 +160,7 @@ width:100vw;
 }
 .member-section{
   visibility: hidden;
+  background-image: url("images/Front_page/member_background.jpg");
 width:100vw;
 }
 .events{
@@ -761,13 +762,13 @@ top:270px;
 .quote{
   color:white;
   padding-top: 5px;
-
+}
   /*GALLERY CSS*/
+
 .pagin{right:5%;
 }
+}
 
-}
-}
 .section-heading{
   border-bottom: 3px solid white;
 }
