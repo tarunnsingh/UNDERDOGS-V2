@@ -30,7 +30,7 @@
 }
 @keyframes boom {
 100% {
-  border: 16px dashed black;
+  border: 16px black;
 }
 }
 .loadin{
