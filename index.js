@@ -1,6 +1,6 @@
 function loader(){
 document.getElementById("logo").style.display="none";
-open_banner();
+open_banner()
 setTimeout(home,350);
 }
 

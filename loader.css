@@ -1,26 +1,12 @@
 
 
 /*loader*/
-@keyframes spin {
-100% {
-  transform: rotateZ(360deg);
-}}
-.loadin1{
-  position: absolute;
-  opacity:1;
-  top:4px;
-  right:3%;
-  border-radius: 50%;
-  border: 8px dashed black;
-  padding:4px;
-  animation: spin 10s linear infinite;
-  width:140px;
-  height:140px;
-}
+
+
 .loading{
   position: relative;
   opacity:1;
-  background-image: url("assets/Front_page/white.jpeg");
+  background-color:black;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -29,6 +15,26 @@
   height:150px;
 
 }
+.loadin1{
+  position: absolute;
+  opacity:1;
+  top:4px;
+  right:3%;
+  border-radius: 50%;
+  border: 8px dashed white;
+  padding:4px;
+  animation: boom 0.5s linear infinite;
+  width:140px;
+  height:140px;
+  background-color: black;
+}
+@keyframes boom {
+50% {
+  border: 16px dashed black;
+}
+100% {
+  border: 8px dashed white;
+  }}
 .loadin{
   overflow:auto;
   border-radius: 50%;
