@@ -27,7 +27,7 @@ a:hover{
   font-family: 'Permanent Marker', cursive;
 }
 .faq-ques{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 15px;
 }
 .faq-ans{
@@ -273,6 +273,7 @@ top:95px;
   display:none;
 }
 .back-to-front-from-gallery-mobile{
+  cursor:pointer;
   position:relative;
   float:right;
   color:white;
@@ -390,6 +391,7 @@ top:270px;
   display: none;
 }
 .back-to-front-from-gallery-mobile{
+  cursor:pointer;
   position:relative;
   float:right;
   color:white;
@@ -528,14 +530,19 @@ top:270px;
   padding-top:85px;
   color:white;
 }
+.back-to-front-from-gallery-mobile{
+  display:none;
+}
 .back-to-front-from-gallery{
   cursor: pointer;
   font-size:40px;
   color:white;
   position: absolute;
-  margin-top: 6%;
-  left:10%;
+  bottom:180px;
+  left:18%;
+  z-index: 100;
   display:block;
+  opacity: 1;
 }
 .quote{
   color:white;
@@ -681,14 +688,18 @@ top:270px;
   padding-top:85px;
   color:white;
 }
+.back-to-front-from-gallery-mobile{
+  display:none;
+}
 .back-to-front-from-gallery{
   cursor: pointer;
   font-size:40px;
-  color:white;
   position: absolute;
-  margin-top: 6%;
-  left:10%;
+  z-index: 0;
+  top:1280px;
+  left:18%;
   display: block;
+  opacity: 1;
 }
 .quote{
   color:white;
@@ -936,4 +947,7 @@ list-style-type: none;
   padding-right:10px;
 
 color:white;
+}
+.btfgi{
+  color:white;
 }
