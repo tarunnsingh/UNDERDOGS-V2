@@ -21,16 +21,16 @@
   top:4px;
   right:3%;
   border-radius: 50%;
-  border: 8px white;
+  border: 8px solid white;
   padding:4px;
-  animation: boom 0.5s linear infinite;
+  animation: boom 0.4s linear infinite;
   width:140px;
   height:140px;
   background-color: black;
 }
 @keyframes boom {
 100% {
-  border: 16px black;
+  border: 16px solid black;
 }
 }
 .loadin{
