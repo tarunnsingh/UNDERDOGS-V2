@@ -21,7 +21,7 @@
   top:4px;
   right:3%;
   border-radius: 50%;
-  border: 8px dashed white;
+  border: 8px white;
   padding:4px;
   animation: boom 0.5s linear infinite;
   width:140px;
@@ -29,12 +29,10 @@
   background-color: black;
 }
 @keyframes boom {
-50% {
+100% {
   border: 16px dashed black;
 }
-100% {
-  border: 8px dashed white;
-  }}
+}
 .loadin{
   overflow:auto;
   border-radius: 50%;
