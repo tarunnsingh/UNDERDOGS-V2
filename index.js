@@ -29,7 +29,7 @@ function home(){
                        document.getElementsByTagName("BODY")[0].style.overflowY="initial";
                        document.getElementsByClassName("intro-msg-box")[0].style.opacity="0.8";
                        document.getElementsByClassName("intro-msg-box")[0].style.transform="rotateZ(360deg)";
-                       document.getElementsByClassName("intro-msg-box")[0].style.height="365px";
+                       document.getElementsByClassName("intro-msg-box")[0].style.height="200px";
 
 }
 
@@ -47,7 +47,7 @@ $(window).scroll(function() {
   else{
   document.getElementsByClassName("intro-msg-box")[0].style.opacity="0.8";
   document.getElementsByClassName("intro-msg-box")[0].style.transform="rotateZ(360deg)";
-  document.getElementsByClassName("intro-msg-box")[0].style.height="365px";
+  document.getElementsByClassName("intro-msg-box")[0].style.height="200px";
 }
 });
 
