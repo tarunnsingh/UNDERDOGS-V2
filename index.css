@@ -95,6 +95,8 @@ width:100vw;
 }
 .events{
   width:100%;
+  padding:30px;
+  top: 10px;
   visibility: hidden;
   overflow-x: hidden;
 }
@@ -148,7 +150,12 @@ visibility: hidden;
 .car-b-img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.event_image{
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
 
+}
 @media only screen and (min-width: 300px) and (max-width: 400px)
 {
   .loading{
@@ -228,13 +235,14 @@ height:auto;
 
 .events{
   background-color: #C91F37;
-  height:480px;
+  height:610px;
 
 }
 .event_image{
-  padding-left:10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  position: relative;
+  position: relative;
+  top:20px;
+
 }
 .faq{
 position:fixed;
@@ -352,12 +360,13 @@ height:auto;
 
 .events{
   background-color: #C91F37;
-  height:560px;
+  height:650px;
 }
 .event_image{
   padding-left:10px;
   padding-right: 10px;
-  padding-top: 10px;
+
+
 }
 .mobile{
 
@@ -491,7 +500,7 @@ height:auto;
 .events{
 
   background-color: #C91F37;
-  height:800px;
+  height:880px;
 
 }
 
@@ -504,7 +513,8 @@ height:auto;
 
 }
 .event_image{
-  padding-top:85px;
+  padding-top:30px;
+
 }
 .row-foot{
   padding-top: 10px;
