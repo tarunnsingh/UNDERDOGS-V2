@@ -261,3 +261,24 @@ function gender(){
       document.getElementsByClassName("mobile-phone-number")[0].style.opacity="0";
   k++;
 }
+
+
+
+//gallery-loader
+
+function loader_gallery(){
+document.getElementById("logo1").style.display="none";
+open_banner()
+setTimeout(home_gallery,350);
+}
+
+function open_banner(){
+  document.getElementsByClassName("left-banner")[0].style.width="0";
+  document.getElementsByClassName("right-banner")[0].style.width="0";
+}
+
+
+function home_gallery(){
+  document.getElementById("photogallery").style.display="block";
+
+}
