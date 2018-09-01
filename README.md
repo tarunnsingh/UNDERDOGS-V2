@@ -1,5 +1,5 @@
 # UNDERDOGS-V2
-The version 2 of the official underdogs webapp
+The version 3 of the official underdogs webapp
 
 LIBRARY USED: BOOTSTRAP 4.0
 
