@@ -29,7 +29,7 @@ body{
 
 }
 
-@media  (min-width:800px)
+@media only screen and (min-width:801px)
 {
   .crew{
     position: relative;
@@ -68,13 +68,13 @@ body{
   left:20px;
 }
 
-.slot-text{
-  position: relative;
-  top:47%;
+h5{
   font-family: 'Cinzel', serif;
   font-size: 3.0em ;
 
 }
+
+
 }
 @media  (max-width:800px)
 {
@@ -117,11 +117,14 @@ body{
 
 }
 
-.slot-text{
-  position: relative;
-  top:47%;
+h5{
   font-family: 'Cinzel', serif;
   font-size: 2.0em ;
+}
 
 }
+
+.text-box{
+  position: relative;
+  top:47%;
 }
