@@ -23,13 +23,13 @@ body{
   position: relative;
   width:80%;
   height:60vh;
-  top:23%;
+  top:13%;
   margin:auto;
   background-color: black;
 
 }
 
-@media only screen and (min-width:801px)
+@media all and (min-width:801px)
 {
   .crew{
     position: relative;
@@ -121,10 +121,43 @@ h5{
   font-family: 'Cinzel', serif;
   font-size: 2.0em ;
 }
-
-}
-
 .text-box{
   position: relative;
-  top:47%;
+  top:30px;
+}
+.main-logo{
+  position: relative;
+  top:9%;
+  width:27%;
+  height: auto;
+}
+}
+@media all and (min-width:801px)
+{
+  .text-box{
+    position: relative;
+    top:46%;
+  }
+  .main-logo{
+    position: relative;
+    left:1%;
+    top:5%;
+  }
+}
+.main-logo{
+  position: relative;
+  border-radius:50%;
+  border:  solid white 5px;
+  padding: 5px;
+  animation-name: coin;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+@keyframes coin {
+    0%   {transform:rotateZ(0deg); }
+    25%{transform:rotateY(80deg);}
+    45% {transform:rotateX(60deg);}
+    65%  {transform:rotateY(-30deg);}
+    85%{transform:rotateY(80deg);}
+    100% {transform: rotateZ(360deg);}
 }

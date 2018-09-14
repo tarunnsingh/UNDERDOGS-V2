@@ -30,10 +30,12 @@ nav{
 }
 .faq-ques{
     font-family: 'Caveat', cursive;
-    font-size: 15px;
+    font-size: 20px;
+    color: rgba(254,254,254,0.6) ;
 }
 .faq-ans{
   font-family: 'Caveat', cursive;
+  color:rgba(254,254,254,1);
 }
 
 .card-text{
@@ -288,6 +290,7 @@ top:95px;
 .faq-ques{
   position: relative;
   width:100%;
+
   height:auto;
   overflow: scroll;
   word-wrap: break-word;
@@ -295,6 +298,7 @@ top:95px;
 .close_icon{
   position:fixed;
   z-index: 100;
+  color:white;
   top:98px;
   right:11%;
   cursor: pointer;
@@ -419,6 +423,7 @@ top:270px;
   position:fixed;
   z-index: 100;
   top:273px;
+  color:white;
   right:11%;
   cursor: pointer;
   transition: all 1s;
@@ -566,6 +571,7 @@ top:270px;
   position:fixed;
   z-index: 100;
   top:273px;
+  color:white;
   right:11%;
   cursor: pointer;
   transition: all 1s;
@@ -723,6 +729,7 @@ top:270px;
   position:fixed;
   z-index: 100;
   top:273px;
+  color:white;
   right:11%;
   cursor: pointer;
   transition: all 1s;
@@ -751,14 +758,27 @@ top:270px;
 
 .btn-enroll{
   opacity:0.8;
-  background-color: black !important;
+  background-color: black;
   color:white;
   transition: color 0.5s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: colorswap;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .btn-enroll:hover{
 
   color:grey;
+}
+@keyframes colorswap{
+  25% {background-color:rgba(0,0,0,0.5);}
+  50% {background-color:rgba(0,0,0,0.6);}
+  75% {background-color:rgba(0,0,0,0.8);}
+  100% {background-color:rgba(0,0,0,0.1);}
 }
 
 
@@ -948,6 +968,17 @@ transition: opacity 1s;
      z-index: 1;
 
   }
+
+.faq-card{
+  background-color: rgba(0,0,0,1.0);
+
+  font-weight:400;
+  font-size:1.1em;
+
+}
+
+
+
 
 /* PHOTO GALLLERY SECTION*/
 
