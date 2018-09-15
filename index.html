@@ -23,8 +23,8 @@
 
 
      <a href="UDC-band/band.html"><div class="crew">
-       <video id="bgVideo" class="vid"  autoplay loop muted>
-        <source src="videos/band.mp4" type="video/mp4" >
+       <video id="bgVideo" class="vid" autobuffer playsinline autoplay loop muted>
+        <source src="videos/band.mp4"  >
        </video>
 
       <br/></br><span class="text-box bt-box"><h5 class="text-center  bt">THE<br/>BAND</h5></span>
@@ -36,8 +36,8 @@
 
 
     <a href="UDC-crew/crew.html">  <div class="band">
-      <video id="bgVideo" class="vid"  autoplay loop muted>
-       <source src="videos/crew.mp4" type="video/mp4" >
+      <video id="bgVideo1" class="vid"  autobuffer playsinline autoplay loop muted>
+       <source src="videos/crew.mp4"  >
       </video>
 
   <br/></br><span class="text-box ct-box"><h5 class="text-center  ct">THE<br/>CREW</h5></span>
@@ -49,6 +49,7 @@
 
 </section>
 
+<script>document.getElementsByClassName('vid')[0].play();</script>
 </body>
 
 </html>
