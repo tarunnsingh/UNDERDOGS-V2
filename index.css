@@ -1,20 +1,13 @@
-body{
+html, body{
+  position: relative;
   margin:0px;
   padding: 0px;
+  width: 100%;
+  height:100%;
   overflow-x: hidden;
   }
-  .vid{
-    position: relative;
-    width: 100%;
-    height:100%;
-  }
-  .crew-tag{
-    position: absolute;
-    left:35%;
-    color: white;
-    font-size:2.5vw;
-    z-index: 2;
-  }
+
+
   .home-section{
     position: relative;
   width:100%;
@@ -24,169 +17,122 @@ body{
   margin-top: 0px;
 }
 
-.home-divider{
-  position: relative;
-  width:80%;
-  height:60vh;
-  top:13%;
-  margin:auto;
-  background-color: black;
 
+.logo-crew{
+position: absolute;
+border-radius:50%;
+width:12%;
+height:auto;
+border:solid 2px white;
+left:10%;
+z-index:2;
+top:73%;
+}
+.logo-band{
+position: absolute;
+border-radius:50%;
+width:12%;
+height:auto;
+border:solid 2px white;
+right:10%;
+top:-28%;
 }
 
-@media all and (min-width:801px)
-{
+.text-background:hover{
+  background-color:rgba(251,251,251,0.5);
+  color:black !important;
+  transition:all 0.5s;
+}
 
+@media screen and (max-width:800px){
   .crew{
     position: relative;
-    cursor:pointer;
-    float:left;
-    width:49%;
-    height:44vh;
-    background: url(UDC-crew/assets/Front_page/introimg.jpg);
-    background-size: cover;
-    background-position: center;
-    clip-path:polygon(0 0, 100% 0, 80% 60vh, 0 60vh);
-
-
-  }
-.band{
-  position: relative;
-  float:right;
-
-  cursor:pointer;
-
-  width:49%;
-  height:44vh;
-  clip-path:polygon(20% 0, 100% 0, 100% 60vh, 0 60vh);
-  background: url(UDC-band/assets/Front_page/introimg.jpeg);
-  background-size: cover;
-  background-position: center;
-
-}
-.ct{
-   color:rgba(0,0,0,0.8);
-   background-color:rgba(254,254,254,0.2);
-   left:20px;
-}
-.bt{
-
-  color: rgba(254,254,254,0.8);
-  background-color:rgba(0,0,0,0.2);
-  right:50px  !important;
-}
-
-h5{
-  font-family: 'Cinzel', serif;
-  font-size: 3.0em ;
-
-}
-.text-box{
-  position: absolute;
-  align-items: center;
-  width: 100%;
-  bottom:20%;
-  display: flex;
-  justify-content: center;
-  z-index: 50;
-}
-.ct-box{
-
-  right:3%;
-
-}
-.bt-box{
-
-  left: 3%;
-}
-.main-logo{
-  position: relative;
-  left:1%;
-  top:5%;
-}
-
-}
-@media  (max-width:800px)
-{
-  .vid{
-    display: none;
-  }
-  .crew{
-    position: relative;
-    cursor:pointer;
-    float:right;
     width:100%;
-    height:30vh;
-    top: 15px;
-    bottom: 10px;
-    background: url(UDC-band/assets/Front_page/introimg.jpg);
+    height:50%;
+    background-image:url("UDC-crew/assets/Front_page/introimg.jpg");
+    background-attachment: scroll;
     background-size: cover;
-    background-position: center;
-
-
+    background-repeat: no-repeat;
+    background-position-x: 56%;
+    background-position-y: 43%;
+    border-bottom:solid 1px white;
+    }
+    .band{
+      position: relative;
+      width:100%;
+      height: 50%;
+      background-image:url("UDC-band/assets/Front_page/introimg.jpeg");
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: 38%;
+      border-top:solid 1px white;
+      }
+  .crew-label{
+    position: relative;
+    font-family: 'Staatliches', cursive;
+    white-space: nowrap;
+    font-size:2.0em;
+    cursor: pointer;
   }
-.band{
-  position: relative;
-  float:left;
-  background: url(UDC-crew/assets/Front_page/introimg.jpeg);
-  background-size: cover;
-  background-position: center;
-  cursor:pointer;
-
-  width:100%;
-  height:30vh;
-
-
-
-}
-.ct{
-  position: relative;
-   color:rgba(0,0,0,0.8);
-   background-color:rgba(254,254,254,0.1);
-
+  .text-background{
+    position: relative;
+    width:auto;
+    height:auto;
+    top:55%;
+    color:white;
+    background-color: rgba(0,0,0,0.4);
+    padding:15px;
+    cursor: pointer;
+  }
 }
 
-.bt{
-  color: rgba(254,254,254,0.8);
-  background-color:rgba(0,0,0,0.2);
-}
-
-h5{
-  font-family: 'Cinzel', serif;
-  font-size: 2.0em ;
-}
-.text-box{
-  position: absolute;
-  align-items: center;
-  width: 100%;
-  font-size: 0.9em;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 50;
-}
-.main-logo{
-  position: relative;
-  top:9%;
-  width:27%;
-  height: auto;
-}
-}
-
-.main-logo{
-  position: relative;
-  border-radius:50%;
-  border:  solid white 5px;
-  padding: 5px;
-  animation-name: coin;
-  animation-duration:2s;
-  animation-iteration-count: infinite;
-}
-@keyframes coin {
-    0%   {transform:rotateZ(0deg); }
-    25%{transform:rotateY(80deg);}
-    45% {transform:rotateX(60deg);}
-    65%  {transform:rotateY(-30deg);}
-    85%{transform:rotateY(80deg);}
-    100% {transform: rotateZ(360deg);}
+@media screen and (min-width:801px) and (max-width:4000px){
+  .crew{
+    position: relative;
+    width:100%;
+    height:50%;
+    background-image:url("UDC-crew/assets/Front_page/introimg.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 43%;
+    border-bottom:solid 1px white;
+    }
+    .band{
+      position: relative;
+      width:100%;
+      height: 50%;
+      background-image:url("UDC-band/assets/Front_page/introimg.jpeg");
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: 38%;
+      border-top:solid 1px white;
+      }
+  .crew-label{
+    position: relative;
+    font-family: 'Staatliches', cursive;
+    white-space: nowrap;
+    font-size:3.0em;
+    cursor: pointer;
+  }
+  .text-background{
+    position: relative;
+    width:40%;
+    height:auto;
+    top:55%;
+    color:white;
+    background-color: rgba(0,0,0,0.4);
+    padding:10px;
+    cursor: pointer;
+  }
+  #udc{
+    position: absolute;
+    margin-left:0% !important;
+     }
+   #tlf{
+       position: absolute;
+       right:0% !important;
+     }
 }

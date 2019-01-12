@@ -16,7 +16,9 @@ a:hover{
 nav{
   box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.7);
 }
-
+div{
+  outline: none;
+}
 
 /*FONTS*/
 .nav-link{
@@ -82,7 +84,10 @@ visibility: hidden;
   opacity:0;
   transition: opacity 0.5s;
 }
-
+.loading{
+  position: relative;
+  display:block;
+}
 .content-row{
 visibility: hidden;
 width:100vw !important;
@@ -136,12 +141,12 @@ width:100vw;
 #homerow{
   position: relative;
   visibility: hidden;
-  style.opacity="0";
+  opacity:0;
 }
 
 #enroll-button{
 visibility: hidden;
-  opacity="0";
+  opacity:0;
 }
 #top{
   visibility: hidden;
@@ -176,6 +181,11 @@ visibility: hidden;
   border-radius: 15px;
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
 
+}
+.loadin{
+  position: relative;
+  width:100px;
+  height:100px;
 }
 @media only screen and (min-width: 300px) and (max-width: 400px)
 {
@@ -267,7 +277,7 @@ height:auto;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.8);
   background-blend-mode: multiply;
-  height:550px;
+  height:300px;
 
 }
 .event_image{
@@ -391,7 +401,7 @@ height:auto;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.8);
   background-blend-mode: multiply;
-  height:650px;
+  height:400px;
 }
 .event_image{
   padding-left:10px;
@@ -532,7 +542,7 @@ height:auto;
   background: url("assets/Front_page/events.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height:880px;
+  height:500px;
   background-color: rgba(0,0,0,0.8);
   background-blend-mode: multiply;
 }
@@ -689,7 +699,7 @@ word-spacing: 0.20em;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.8);
   background-blend-mode: multiply;
-  height:850px;
+  height:500x;
 
 }
 
