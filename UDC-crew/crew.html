@@ -23,7 +23,7 @@ UNDERDOGS CREW
 
 </head>
 
-<body  onload="loader()" >
+<body  onload="loader()"  >
 
 <!--LOADER-->
 
@@ -93,8 +93,8 @@ UNDERDOGS CREW
 
 <div class="row content-row">
     <div class="col-12 col-lg-4 col-sm-12 col-md-4  content-columns content-column-1  ">
-      <div onclick="videos()" class="card content card-box " style="width: 13rem;">
-              <a   href="#"  class="videog smooth-scroll" > <img class="card-img-top" src="assets/Front_page/n3.jpeg" alt="Card image cap">
+      <div  class="card content card-box " style="width: 13rem;">
+              <a   href="#videogallery" onclick="videos()" class="videog smooth-scroll" > <img class="card-img-top" src="assets/Front_page/n3.jpeg" alt="Card image cap">
            <div class="card-body">
     <p class="card-text">VIDEOS</p>
   </div>
@@ -197,9 +197,12 @@ UNDERDOGS CREW
 
 
 <!--VIDEO GALLERY-->
-<div id="videogallery">
+<div id="videogallery" class="videogal" onclick="closevideos()">
+    <i class="fas fa-times-circle vcancel"></i>
 <div  class="video-container text-center" >
-  <span ><h3 class="coming-soon ">COMING SOON  <span class="dot">.</span></h3></span>
+  <iframe class="crew-video "
+  src="https://www.youtube.com/embed/gHNV8146nPE">
+  </iframe> 
 </div></div>
 
 

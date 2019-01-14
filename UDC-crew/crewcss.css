@@ -1,4 +1,4 @@
-body{
+html, body{
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -107,8 +107,7 @@ width:100vw !important;
   display: block;
   width:100%;
   opacity:0;
-  transition: opacity 0.5s;
-
+  transition: all 0.5s;
 }
 .member-section{
   visibility: hidden;
@@ -161,9 +160,13 @@ visibility: hidden;
   background-color: black;
   color:white;
   z-index: 50;
-  margin-left: 22%;
-  width:60%;
-  height:100px;
+  margin: auto;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  width:100%;
+  height:auto;
 
 }
 .coming-soon{
@@ -189,7 +192,23 @@ visibility: hidden;
 }
 @media only screen and (min-width: 300px) and (max-width: 400px)
 {
-
+  .crew-video{
+    position: absolute;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:1;
+    width:250px;
+    height:150px;
+  }
+  .gallery-img{
+    position: relative;
+    display:block;
+    width:260px;
+    height:200px;
+  }
   .introduction{
   height:auto;
     width:100%;
@@ -253,7 +272,7 @@ height:auto;
 
 .aboutus{
   position: relative;
-  height:60%;
+  height:auto;
 
 }
 .members{
@@ -324,7 +343,26 @@ top:95px;
 }
 @media only screen and (min-width: 400px) and (max-width: 800px)
 {
-
+  .crew-video{
+    position: absolute;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:1;
+    width:300px;
+    height:200px;
+  }
+  .gallery-img{
+    position: relative;
+    display:block;
+    margin:auto;
+    left:0px;
+    right:0px;
+    width:200px;
+    height:180px;
+  }
   .introduction{
 
   height:auto;
@@ -379,7 +417,7 @@ height:auto;
 
 .aboutus{
   position: relative;
-  height:60%;
+  height:auto;
 
 
 }
@@ -442,6 +480,26 @@ top:270px;
 }
 @media only screen and (min-width: 801px) and (max-width: 1199px)
 {
+  .crew-video{
+    position: absolute;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:1;
+    width:700px;
+    height:500px;
+  }
+  .gallery-container{
+    margin-left:15px;
+  }
+  .gallery-img{
+    position: relative;
+    display:block;
+    width:270px;
+    height:220px;
+  }
   .mobile-top{
     display:none;
   }
@@ -523,7 +581,7 @@ height:auto;
 }
 .aboutus{
   position: relative;
-  height:60%;
+  height:auto%;
 
   word-spacing: 0.20em;
 }
@@ -594,6 +652,23 @@ top:270px;
 
 @media only screen and (min-width: 1200px)
 {
+  .crew-video{
+    position: absolute;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:1;
+    width:850px;
+    height:550px;
+  }
+  .gallery-img{
+    position: relative;
+    display:block;
+    width:370px;
+    height:300px;
+  }
   .mobile-top{
     display:none;
   }
@@ -681,7 +756,7 @@ height:auto;
 
   position: relative;
 word-spacing: 0.20em;
-  height:60%;
+  height:auto;
 }
 .members{
   position: relative;
@@ -995,6 +1070,9 @@ width:100%;
 #p2{
   display: none;
 }
+#p3{
+  display: none;
+}
 .gallery-heading{
   position: relative;
   width: 400px;
@@ -1050,3 +1128,11 @@ list-style-type: none;
 
 color:white;
 }
+.videogal{
+  position: relative;
+  margin:auto;
+  width:100%;
+  height:auto;
+}
+
+

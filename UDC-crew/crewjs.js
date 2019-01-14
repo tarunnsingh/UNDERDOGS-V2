@@ -63,15 +63,10 @@ if(screen.width>800)
     document.getElementsByClassName("nav-item")[j].removeAttribute("data-toggle");
     j++;
   }
-  document.getElementsByClassName("videog")[0].removeAttribute("href");
-  document.body.removeAttribute("onscroll");
 }
 else{
 
   document.getElementsByClassName("big-screens")[0].style.display="none";
-
-
-  document.getElementsByClassName("videog")[0].setAttribute("href","#videogallery");
 }
 
 function faq(){
@@ -125,7 +120,6 @@ function videos(){
   document.getElementsByClassName("events")[0].style.opacity="0.5";
    document.getElementsByClassName("foot")[0].style.opacity="0.5";
   document.getElementById("videogallery").style.display="block";
-  videogal();
 }
 
 function close_videos(){
@@ -138,51 +132,33 @@ function close_videos(){
     document.getElementsByClassName("navbar")[0].style.opacity="1";
 }
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-$(".smooth-scroll").click(function (event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      if(screen.width>800)
-      {
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 90
-      }, 800);
-    }
-
-    if(screen.width<400)
-    {
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top - 70
-    }, 800, function(){
-
-      });
-  }
-
-
-  if(screen.width<800 && screen.width>=400)
-  {
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top - 70
-  }, 800, function(){
-
-    });
+function hide_video(){
+  document.getElementsByClassName("introduction")[0].style.opacity="1";
+  document.getElementsByClassName("content-row")[0].style.opacity="1";
+  document.getElementsByClassName("members")[0].style.opacity="1";
+  document.getElementsByClassName("events")[0].style.opacity="1";
+   document.getElementsByClassName("foot")[0].style.opacity="1";
+    document.getElementById("videogallery").style.display="none";
+    document.getElementsByClassName("navbar")[0].style.opacity="1";
 }
 
 
+$(".smooth-scroll").click(function (event) {
 
-    } // End if
-  });
-});
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top -200
+    }, 800);
+  }});
 
 
 
@@ -192,12 +168,20 @@ var i=1;
 function g1(){
   document.getElementById("p1").style.display="block";
     document.getElementById("p2").style.display="none";
+    document.getElementById("p3").style.display="none";
     i=1;
 }
 function g2(){
   document.getElementById("p1").style.display="none";
   document.getElementById("p2").style.display="block";
+  document.getElementById("p3").style.display="none";
   i=2;
+}
+function g3(){
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="block";
+  i=3;
 }
 
 function leftgallery(){
@@ -206,9 +190,12 @@ function leftgallery(){
   {
   g1();
 }
-  else
+  else if(i==2)
   {
     g2();
+  }
+  else{
+    g3();
   }
 }
 
@@ -218,24 +205,13 @@ function rightgallery(){
   {
   g1();
 }
-  else
+  else if(i==2)
   {
     g2();
   }
-}
-function videogal() {
-    var dot = document.getElementsByClassName("dot")[0];
-    setInterval(function dots(){
-
-    if(dot.innerHTML.length > 4)
-    {
-    dot.innerHTML="";
-}
-    else
-
-       dot.innerHTML+=".";
-     },600);
-     setTimeout(close_videos,5800);
+  else{
+     g3();
+  }
 }
 
 //expanding phone-number box
