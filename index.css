@@ -1,138 +1,152 @@
-html, body{
+html,
+body {
   position: relative;
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   width: 100%;
-  height:100%;
+  height: 100%;
   overflow-x: hidden;
-  }
-
-
-  .home-section{
-    position: relative;
-  width:100%;
-  height:100vh;
-  background-color:black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+.home-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
   margin-left: 0px;
   margin-top: 0px;
 }
 
-
-.logo-crew{
-position: absolute;
-border-radius:50%;
-width:12%;
-height:auto;
-border:solid 2px white;
-left:10%;
-z-index:2;
-top:73%;
+.logo-crew {
+  position: absolute;
+  border-radius: 50%;
+  width: 12%;
+  height: auto;
+  border: solid 2px white;
+  left: 10%;
+  z-index: 2;
+  top: 73%;
 }
-.logo-band{
-position: absolute;
-border-radius:50%;
-width:12%;
-height:auto;
-border:solid 2px white;
-right:10%;
-top:-28%;
-}
-
-.text-background:hover{
-  background-color:rgba(251,251,251,0.5);
-  color:black !important;
-  transition:all 0.5s;
+.logo-band {
+  position: absolute;
+  border-radius: 50%;
+  width: 12%;
+  height: auto;
+  border: solid 2px white;
+  right: 10%;
+  top: -28%;
 }
 
-@media screen and (max-width:800px){
-  .crew{
+.text-background:hover {
+  background-color: rgba(251, 251, 251, 0.5);
+  color: black !important;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .crew {
     position: relative;
-    width:100%;
-    height:50%;
-    background-image:url("UDC-crew/assets/Front_page/introimg.jpg");
+    width: 100%;
+    height: 50%;
+    background-image: url("UDC-crew/assets/Front_page/introimg.jpg");
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 56%;
-    background-position-y: 43%;
-    border-bottom:solid 1px white;
-    }
-    .band{
-      position: relative;
-      width:100%;
-      height: 50%;
-      background-image:url("UDC-band/assets/Front_page/introimg.jpeg");
-      background-attachment: scroll;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: 38%;
-      border-top:solid 1px white;
-      }
-  .crew-label{
+    background-position-x: 49%;
+
+    border-bottom: solid 1px white;
+  }
+  .band {
     position: relative;
-    font-family: 'Staatliches', cursive;
+    width: 100%;
+    height: 50%;
+    background-image: url("UDC-band/assets/Front_page/introimg.jpeg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 38%;
+    border-top: solid 1px white;
+  }
+  .crew-label {
+    position: relative;
+    font-family: "Staatliches", cursive;
     white-space: nowrap;
-    font-size:2.0em;
+    font-size: 2em;
     cursor: pointer;
   }
-  .text-background{
+  .text-background {
     position: relative;
-    width:auto;
-    height:auto;
-    top:55%;
-    color:white;
-    background-color: rgba(0,0,0,0.4);
-    padding:15px;
+    width: auto;
+    height: auto;
+    top: 55%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
     cursor: pointer;
+  }
+  #tlf {
+    position: relative;
+    top: 55%;
+  }
+  #udc {
+    position: relative;
+    top: 55%;
   }
 }
 
-@media screen and (min-width:801px) and (max-width:4000px){
-  .crew{
+@media screen and (min-width: 801px) and (max-width: 4000px) {
+  .crew {
     position: relative;
-    width:100%;
-    height:50%;
-    background-image:url("UDC-crew/assets/Front_page/introimg.jpg");
+    width: 100%;
+    height: 50%;
+    background-image: url("UDC-crew/assets/Front_page/introimg.jpg");
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 43%;
-    border-bottom:solid 1px white;
-    }
-    .band{
-      position: relative;
-      width:100%;
-      height: 50%;
-      background-image:url("UDC-band/assets/Front_page/introimg.jpeg");
-      background-attachment: scroll;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: 38%;
-      border-top:solid 1px white;
-      }
-  .crew-label{
+    border-bottom: solid 1px white;
+  }
+  .band {
     position: relative;
-    font-family: 'Staatliches', cursive;
+    width: 100%;
+    height: 50%;
+    background-image: url("UDC-band/assets/Front_page/introimg.jpeg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 38%;
+    border-top: solid 1px white;
+  }
+  .crew-label {
+    position: relative;
+    font-family: "Staatliches", cursive;
     white-space: nowrap;
-    font-size:3.0em;
+    font-size: 3em;
     cursor: pointer;
   }
-  .text-background{
+  .text-background {
     position: relative;
-    width:40%;
-    height:auto;
-    top:55%;
-    color:white;
-    background-color: rgba(0,0,0,0.4);
-    padding:10px;
+    width: 40%;
+    height: auto;
+    top: 55%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
     cursor: pointer;
   }
-  #udc{
+  #udc {
     position: absolute;
-    margin-left:0% !important;
-     }
-   #tlf{
-       position: absolute;
-       right:0% !important;
-     }
+    margin-left: 0% !important;
+  }
+  #tlf {
+    position: absolute;
+    right: 0% !important;
+  }
 }

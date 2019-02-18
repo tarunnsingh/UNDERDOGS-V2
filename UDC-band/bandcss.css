@@ -139,7 +139,7 @@ width:100vw !important;
 
 #enroll-button{
 visibility: hidden;
-  style.opacity="0";
+opacity: 0;
 }
 #top{
   visibility: hidden;
@@ -285,31 +285,12 @@ height:auto;
 
 }
 .faq{
-position:fixed;
-margin-left: 10%;
-margin-right: 10%;
-  z-index: 100;
-  width:80%;
-  display: none;
-top:95px;
+position: relative;;
+background-color:rgb(0,0,0,1);
+width:100%;
+height:auto;
 }
-.faq-ques{
-  position: relative;
-  width:100%;
 
-  height:auto;
-  overflow: scroll;
-  word-wrap: break-word;
-}
-.close_icon{
-  position:fixed;
-  z-index: 100;
-  color:white;
-  top:98px;
-  right:11%;
-  cursor: pointer;
-  transition: all 1s;
-}
 .section-heading{
   padding-top:20px;
   color:white;
@@ -417,23 +398,11 @@ height:auto;
   padding-top: 50px;
 }
 .faq{
-position:fixed;
-margin-left: 10%;
-margin-right: 10%;
-  z-index: 100;
-  width:80%;
-  display: none;
-top:270px;
-}
-.close_icon{
-  position:fixed;
-  z-index: 100;
-  top:273px;
-  color:white;
-  right:11%;
-  cursor: pointer;
-  transition: all 1s;
-}
+  position: relative;;
+  background-color:rgb(0,0,0,1);
+  width:100%;
+  height:auto;
+  }
 .section-heading{
   padding-top:45px;
   color:white;
@@ -565,23 +534,11 @@ height:auto;
   padding-top: 10px;
 }
 .faq{
-position:fixed;
-margin-left: 10%;
-margin-right: 10%;
-  z-index: 100;
-  width:80%;
-  display: none;
-top:270px;
-}
-.close_icon{
-  position:fixed;
-  z-index: 100;
-  top:273px;
-  color:white;
-  right:11%;
-  cursor: pointer;
-  transition: all 1s;
-}
+  position: relative;;
+  background-color:rgb(0,0,0,1);
+  width:100%;
+  height:auto;
+  }
 .section-heading{
   padding-top:85px;
   color:white;
@@ -722,24 +679,11 @@ word-spacing: 0.20em;
 }
 
 .faq{
-position:fixed;
-margin-left: 10%;
-margin-right: 10%;
-  z-index: 100;
-  width:80%;
-  display: none;
-top:270px;
-
-}
-.close_icon{
-  position:fixed;
-  z-index: 100;
-  top:273px;
-  color:white;
-  right:11%;
-  cursor: pointer;
-  transition: all 1s;
-}
+  position: relative;;
+  background-color:rgb(0,0,0,1);
+  width:100%;
+  height:auto;
+  }
 .section-heading{
   padding-top:40px;
   color:white;
@@ -942,7 +886,7 @@ transition: opacity 1s;
   position: relative;
   border-radius:5%;
   margin: auto;
-  width:220px;
+  width:260px;
   height:230px;
   }
   .member-body{
