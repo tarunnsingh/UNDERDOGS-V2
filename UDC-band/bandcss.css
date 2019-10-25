@@ -1,1013 +1,1028 @@
-body{
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
 
-overflow-x: hidden;
+a {
+    text-decoration: none !important;
+    color: inherit;
 }
-a{
-  text-decoration: none !important;
-  color:inherit;
+
+a:hover {
+    color: inherit;
 }
-a:hover{
-  color:inherit;
-}
-nav{
-  box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.7);
+
+nav {
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 
 /*FONTS*/
-.nav-link{
+
+.nav-link {
     font-family: 'Acme', sans-serif;
 }
-.section-heading{
-  font-family: 'Caveat', cursive;
-}
-.btn-enroll{
-  font-family: 'Permanent Marker', cursive;
-}
-.faq-ques{
+
+.section-heading {
     font-family: 'Caveat', cursive;
-    font-size: 20px;
-    color: rgba(254,254,254,0.6) ;
-}
-.faq-ans{
-  font-family: 'Caveat', cursive;
-  color:rgba(254,254,254,1);
 }
 
-.card-text{
-  font-family: 'Permanent Marker', cursive;
-}
-.button-rules{
-
-  font-family: 'Permanent Marker', cursive;
-}
-.links{
-font-family: 'Caveat', cursive;
-}
-.foot-head{
+.btn-enroll {
     font-family: 'Permanent Marker', cursive;
 }
-.quote{
-font-family: 'Caveat', cursive;
-}
-.coming-soon{
-  font-family: 'Caveat', cursive;
+
+.faq-ques {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: rgba(254, 254, 254, 0.6);
 }
 
+.faq-ans {
+    font-family: 'Caveat', cursive;
+    color: rgba(254, 254, 254, 1);
+}
+
+.card-text {
+    font-family: 'Permanent Marker' 'cursive';
+}
+
+.button-rules {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.links {
+    font-family: 'Caveat', cursive;
+}
+
+.foot-head {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.quote {
+    font-family: 'Caveat', cursive;
+}
+
+.coming-soon {
+    font-family: 'Caveat', cursive;
+}
 
 
 /*CSS*/
-div{
-  outline: none;
-}
-#logo{
-display:block;
-  opacity:1;
-  transition: opacity 0.5s;
-}
-#logo1{
-display:block;
-  opacity:1;
-  transition: opacity 0.5s;
-}
-  .brand-logo{
-  color:white;
+
+div {
+    outline: none;
 }
 
-.navbar{
-visibility: hidden;
-  background-color: black !important;
-  opacity:0;
-  transition: opacity 0.5s;
+#logo {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
-.content-row{
-visibility: hidden;
-width:100vw !important;
-  background-color: rgb(232, 233, 237);
-  opacity:0;
-  position:relative;
-  transition: opacity 0.5s;
-}
-.aboutus{
-  background: url("assets/Front_page/aboutus.jpg") ;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.7);
-  background-blend-mode: multiply;
-  visibility: hidden;
-  box-shadow: inset 0 0 3px 3px rgba(0,0,0,0.2);
-  display: block;
-  width:100%;
-  opacity:0;
-  transition: opacity 0.5s;
-
+#logo1 {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
-.events{
-  width:100%;
-  padding:30px;
-  top: 10px;
-  visibility: hidden;
-  overflow-x: hidden;
-  box-shadow:inset  0px 0px 3px 5px rgba(0,0,0,0.3);
+.brand-logo {
+    color: white;
 }
-.members{
-  box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.3);
+
+.navbar {
+    visibility: hidden;
+    background-color: black !important;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
-.foot{
-  width:100vw;
-  visibility: hidden;
-  overflow-x: hidden;
-  box-shadow: 0px -4px rgba(0, 0, 0, 0.19);
+
+.content-row {
+    visibility: hidden;
+    width: 100vw !important;
+    background-color: rgb(232, 233, 237);
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.5s;
 }
-.foot2{
-  width:100vw;
-  visibility: hidden;
-  overflow-x: hidden;
+
+.aboutus {
+    background: url("assets/Front_page/aboutus.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    visibility: hidden;
+    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.events {
+    width: 100%;
+    padding: 30px;
+    top: 10px;
+    visibility: hidden;
+    overflow-x: hidden;
+    box-shadow: inset 0px 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.members {
+    box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.foot {
+    width: 100vw;
+    visibility: hidden;
+    overflow-x: hidden;
+    box-shadow: 0px -4px rgba(0, 0, 0, 0.19);
+}
+
+.foot2 {
+    width: 100vw;
+    visibility: hidden;
+    overflow-x: hidden;
     box-shadow: 0px -10px rgba(0, 0, 0, 0.19);
 }
-#homerow{
-  position: relative;
-  visibility: hidden;
-  style.opacity="0";
-}
 
-#enroll-button{
-visibility: hidden;
-opacity: 0;
-}
-#top{
-  visibility: hidden;
-}
-
-#videogallery{
-  display:none;
-  position: relative;
-  z-index: 5;
-}
-.video-container{
-  position: absolute;
-  background-color: black;
-  color:white;
-  z-index: 50;
-  margin-left: 22%;
-  width:60%;
-  height:100px;
-
-}
-.coming-soon{
-  padding-top:35px;
-}
-
-.car-img{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.car-b-img{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.event_image{
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
-}
-.loadin{
-  position: relative;
-  width:100px;
-  height:100px;
-}
-@media only screen and (min-width: 300px) and (max-width: 400px)
-{
-
-  .introduction{
-    background: url("assets/Front_page/introimg.jpeg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-  height:200px;
-    width:100%;
-
-  }
-  .loading{
-    margin-top: 50%;
-  }
-  #navbarLogo{
-width:180px;
-height:auto;
-
-  }
-  .intro-msg-box{
-    display:none;
-  }
-  .content-row{
-    left:4.5%;
-  }
-  .about_us_content{
-    padding-top:10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    color:white;
-    font-family: 'Caveat', cursive;
-    font-size:23px;
-  }
-
-  .fixing-space{
-  background-color: rgb(247, 249, 249);
-    height:92px;
-  }
-.brand-logo{
-  padding-top: 5px;
-  font-size: 25px;
-}
-.icon{
-  position: relative;
-  font-size: 15px;
-
-}
-.content{
-  position:relative;
- margin-right: auto;
- margin-left: auto;
-}
-.content-column-1{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-2{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-3{
-  padding-top: 45px;
-  padding-bottom:45px;
-  text-align: center;
-}
-
-.aboutus{
-  position: relative;
-  height:60%;
-
-}
-.members{
-  position: relative;
-  height:500px;
-  background:linear-gradient(to right,rgba(47, 53, 66,1),rgba(0,0,0,1));
-}
-.car-img{
-  padding-left:15px;
-  padding-right: 15px;
-}
-.mobile{
-
-  padding-top: 53px;
-}
-.mn{right:5%;}.mp{left:5%;}
-
-.events{
-  background: url("assets/Front_page/events.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.8);
-  background-blend-mode: multiply;
-  height:200px;
-
-}
-.event_image{
-  position: relative;
-  position: relative;
-  top:20px;
-
-}
-.faq{
-position: relative;;
-background-color:rgb(0,0,0,1);
-width:100%;
-height:auto;
-}
-
-.section-heading{
-  padding-top:20px;
-  color:white;
-}
-/*GALLERY CSS*/
-.pagin{
-  position: relative;
-  right:20px;
-}
-
-}
-@media only screen and (min-width: 400px) and (max-width: 800px)
-{
-
-  .introduction{
-    background: url("assets/Front_page/introimg.jpeg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-  height:400px;
-    width:100%;
-  }
-  .loading{
-    margin-top: 50%;
-  }
-  .fixing-space{
-      background-color: rgb(247, 249, 249);
-    height:120px;
-  }
-
-
-  #navbarLogo{
-width:250px;
-height:auto;
-  }
-  .intro-msg-box{
-    display:none;
-  }
-  .content-row{
-    left:4.2%;
-  }
-  .about_us_content{
-    padding-top:20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    color:white;
-    font-family: 'Caveat', cursive;
-    font-size:23px;
-  }
-.content{
-  position:relative;
- margin-right: auto;
- margin-left: auto;
-}
-.content-column-1{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-2{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-3{
-  padding-top: 45px;
-  padding-bottom:45px;
-  text-align: center;
-}
-
-.aboutus{
-  position: relative;
-  height:60%;
-
-
-}
-.members{
-  position: relative;
-  height:530px;
-  background:linear-gradient(to right,rgba(47, 53, 66,1),rgba(0,0,0,1));
-}
-.car-img{
-  padding-left:15px;
-  padding-right: 15px;
-}
-
-.big-screens{padding-top:50px;}
-
-.events{
-  background: url("assets/Front_page/events.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.8);
-  background-blend-mode: multiply;
-  height:200px;
-}
-.event_image{
-  padding-left:10px;
-  padding-right: 10px;
-
-
-}
-.mobile{
-
-  padding-top: 50px;
-}
-.faq{
-  position: relative;;
-  background-color:rgb(0,0,0,1);
-  width:100%;
-  height:auto;
-  }
-.section-heading{
-  padding-top:45px;
-  color:white;
-}
-/*GALLERY CSS*/
-.pagin{right:20px;
-}
-
-}
-@media only screen and (min-width: 801px) and (max-width: 1199px)
-{
-  .mobile-top{
-    display:none;
-  }
-  .introduction{
-    background: url("assets/Front_page/introimg.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  height:450px;
-    width:100%;
-  }
-  .loading{
-    margin-top: 25%;
-  }
-  .fixing-space{
-      background-color: rgb(247, 249, 249);
-    height:120px;
-  }
-  #navbarLogo{
+#homerow {
     position: relative;
-    left:40px;
-width:250px;
-height:auto;
-
-  }
-  .intro-msg-box{
-    display:block;
-    position: absolute;
-    top:18%;
-    right:6%;
-    width:400px;
-    height:0px;
-    background-color: black;
-    opacity:0;
-    overflow: hidden;
-    padding-top: 4%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 8px;
-      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
-      transition: all 1s;
-      transform: rotateZ(0deg);
-  }
-  .intro-msg{
-    font-family: 'Caveat', cursive;
-    font-size: 1.2em;
-    opacity: 1;
-    color:white;
-    word-spacing: 0.20em;
-  }
-  .content-row{
-    left:1.5%;
-  }
-  .about_us_content{
-    padding-top:20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    color:white;
-    font-family: 'Caveat', cursive;
-    font-size:23px;
-  }
-.content{
-  position:relative;
- margin-right: auto;
- margin-left: auto;
-}
-.content-column-1{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-2{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-3{
-  padding-top: 45px;
-  padding-bottom:45px;
-  text-align: center;
-}
-.aboutus{
-  position: relative;
-  height:60%;
-
-  word-spacing: 0.20em;
-}
-.members{
-  position: relative;
-  height:580px;
-  background:linear-gradient(to right,rgba(47, 53, 66,1),rgba(0,0,0,1));
-}
-.car-img{
-  padding-left:15px;
-  padding-right: 15px;
+    visibility: hidden;
+    opacity: "0";
 }
 
-.events{
-
-  background: url("assets/Front_page/events.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:400px;
-  background-color: rgba(0,0,0,0.8);
-  background-blend-mode: multiply;
+#enrollbutton {
+    visibility: hidden;
+    opacity: 0;
 }
 
-.big-screens{
-  padding-top: 55px;
+#top {
+    visibility: hidden;
 }
 
-.foot{
-  background-color: black;
-
-}
-
-.row-foot{
-  padding-top: 10px;
-}
-.faq{
-  position: relative;;
-  background-color:rgb(0,0,0,1);
-  width:100%;
-  height:auto;
-  }
-.section-heading{
-  padding-top:85px;
-  color:white;
-}
-
-.quote{
-  color:white;
-  padding-top: 5px;
-  font-size: 13px;
-}
-/*GALLERY CSS*/
-.pagin{right:2.5%;
-}
-}
-
-@media only screen and (min-width: 1200px)
-{
-  .mobile-top{
-    display:none;
-  }
-  .introduction{
-    background: url("assets/Front_page/introimg.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  height:500px;
-    width:100%;
-  }
-  .loading{
-    margin-top: 23%;
-  }
-  .gallery-heading{
-    margin-left: ;
-  }
-  .fixing-space{
-      background-color: rgb(254,254,254);
-    height:140px;
-  }
-  #navbarLogo{
+#videogallery {
+    display: none;
     position: relative;
-    left:100px;
-width:300px;
-height:auto;
+    z-index: 5;
+}
 
-  }
-  .intro-msg-box{
-    display:block;
+.video-container {
     position: absolute;
-    top:18%;
-    right:6%;
-    width:400px;
-    height:0px;
     background-color: black;
-    opacity:0;
-    overflow: hidden;
-    padding-top: 4%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 8px;
-      box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
-      transition: all 1s;
-      transform: rotateZ(0deg);
-  }
-  .intro-msg{
-    font-family: 'Caveat', cursive;
-    font-size: 1.2em;
-    opacity: 1;
-    color:white;
-    word-spacing: 0.20em;
-  }
-  .content-row{
-    left:1%;
-  }
-  .about_us_content{
-    padding-top:40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    color: white;
+    z-index: 50;
+    margin-left: 22%;
+    width: 60%;
+    height: 100px;
+}
+
+.coming-soon {
+    padding-top: 35px;
+}
+
+.car-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.car-b-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event_image {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loadin {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+    .introduction {
+        background: url("assets/Front_page/introimg.jpeg");
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    .loading {
+        margin-top: 50%;
+    }
+    #navbarLogo {
+        width: 180px;
+        height: auto;
+    }
+    .intro-msg-box {
+        display: none;
+    }
+    .content-row {
+        left: 4.5%;
+    }
+    .about_us_content {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        color: white;
+        font-family: 'Caveat', cursive;
+        font-size: 23px;
+    }
+    .fixing-space {
+        background-color: rgb(247, 249, 249);
+        height: 92px;
+    }
+    .brand-logo {
+        padding-top: 5px;
+        font-size: 25px;
+    }
+    .icon {
+        position: relative;
+        font-size: 15px;
+    }
+    .content {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content-column-1 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-2 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-3 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+    .aboutus {
+        position: relative;
+        height: 60%;
+    }
+    .members {
+        position: relative;
+        height: 500px;
+        background: linear-gradient(to right, rgba(47, 53, 66, 1), rgba(0, 0, 0, 1));
+    }
+    .car-img {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mobile {
+        padding-top: 53px;
+    }
+    .mn {
+        right: 5%;
+    }
+    .mp {
+        left: 5%;
+    }
+    .events {
+        background: url("assets/Front_page/events.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+        height: 200px;
+    }
+    .event_image {
+        position: relative;
+        position: relative;
+        top: 20px;
+    }
+    .faq {
+        position: relative;
+        ;
+        background-color: rgb(0, 0, 0, 1);
+        width: 100%;
+        height: auto;
+    }
+    .section-heading {
+        padding-top: 20px;
+        color: white;
+    }
+    /*GALLERY CSS*/
+    .pagin {
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .introduction {
+        background: url("assets/Front_page/introimg.jpeg");
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+    .loading {
+        margin-top: 50%;
+    }
+    .fixing-space {
+        background-color: rgb(247, 249, 249);
+        height: 120px;
+    }
+    #navbarLogo {
+        width: 250px;
+        height: auto;
+    }
+    .intro-msg-box {
+        display: none;
+    }
+    .content-row {
+        left: 4.2%;
+    }
+    .about_us_content {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        color: white;
+        font-family: 'Caveat', cursive;
+        font-size: 23px;
+    }
+    .content {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content-column-1 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-2 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-3 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+    .aboutus {
+        position: relative;
+        height: 60%;
+    }
+    .members {
+        position: relative;
+        height: 530px;
+        background: linear-gradient(to right, rgba(47, 53, 66, 1), rgba(0, 0, 0, 1));
+    }
+    .car-img {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .big-screens {
+        padding-top: 50px;
+    }
+    .events {
+        background: url("assets/Front_page/events.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+        height: 200px;
+    }
+    .event_image {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mobile {
+        padding-top: 50px;
+    }
+    .faq {
+        position: relative;
+        ;
+        background-color: rgb(0, 0, 0, 1);
+        width: 100%;
+        height: auto;
+    }
+    .section-heading {
+        padding-top: 45px;
+        color: white;
+    }
+    /*GALLERY CSS*/
+    .pagin {
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1199px) {
+    .mobile-top {
+        display: none;
+    }
+    .introduction {
+        background: url("assets/Front_page/introimg.jpeg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+    }
+    .loading {
+        margin-top: 25%;
+    }
+    .fixing-space {
+        background-color: rgb(247, 249, 249);
+        height: 120px;
+    }
+    #navbarLogo {
+        position: relative;
+        left: 40px;
+        width: 250px;
+        height: auto;
+    }
+    .intro-msg-box {
+        display: block;
+        position: absolute;
+        top: 18%;
+        right: 6%;
+        width: 400px;
+        height: 0px;
+        background-color: black;
+        opacity: 0;
+        overflow: hidden;
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
+        transition: all 1s;
+        transform: rotateZ(0deg);
+    }
+    .intro-msg {
+        font-family: 'Caveat', cursive;
+        font-size: 1.2em;
+        opacity: 1;
+        color: white;
+        word-spacing: 0.20em;
+    }
+    .content-row {
+        left: 1.5%;
+    }
+    .about_us_content {
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        color: white;
+        font-family: 'Caveat', cursive;
+        font-size: 23px;
+    }
+    .content {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content-column-1 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-2 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-3 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+    .aboutus {
+        position: relative;
+        height: 60%;
+        word-spacing: 0.20em;
+    }
+    .members {
+        position: relative;
+        height: 580px;
+        background: linear-gradient(to right, rgba(47, 53, 66, 1), rgba(0, 0, 0, 1));
+    }
+    .car-img {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .events {
+        background: url("assets/Front_page/events.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+    }
+    .big-screens {
+        padding-top: 55px;
+    }
+    .foot {
+        background-color: black;
+    }
+    .row-foot {
+        padding-top: 10px;
+    }
+    .faq {
+        position: relative;
+        ;
+        background-color: rgb(0, 0, 0, 1);
+        width: 100%;
+        height: auto;
+    }
+    .section-heading {
+        padding-top: 85px;
+        color: white;
+    }
+    .quote {
+        color: white;
+        padding-top: 5px;
+        font-size: 13px;
+    }
+    /*GALLERY CSS*/
+    .pagin {
+        right: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mobile-top {
+        display: none;
+    }
+    .introduction {
+        background: url("assets/Front_page/introimg.jpeg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+    .loading {
+        margin-top: 23%;
+    }
+    .gallery-heading {
+        margin-left: 2px;
+    }
+    .fixing-space {
+        background-color: rgb(254, 254, 254);
+        height: 140px;
+    }
+    #navbarLogo {
+        position: relative;
+        left: 100px;
+        width: 300px;
+        height: auto;
+    }
+    .intro-msg-box {
+        display: block;
+        position: absolute;
+        top: 18%;
+        right: 6%;
+        width: 400px;
+        height: 0px;
+        background-color: black;
+        opacity: 0;
+        overflow: hidden;
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+        transition: all 1s;
+        transform: rotateZ(0deg);
+    }
+    .intro-msg {
+        font-family: 'Caveat', cursive;
+        font-size: 1.2em;
+        opacity: 1;
+        color: white;
+        word-spacing: 0.20em;
+    }
+    .content-row {
+        left: 1%;
+    }
+    .about_us_content {
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        color: white;
+        font-family: 'Caveat', cursive;
+        font-size: 23px;
+    }
+    .content {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content-column-1 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-2 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    .content-column-3 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+    .aboutus {
+        position: relative;
+        word-spacing: 0.20em;
+        height: 60%;
+    }
+    .members {
+        position: relative;
+        height: 525px;
+        background: linear-gradient(to right, rgba(47, 53, 66, 1), rgba(0, 0, 0, 1));
+    }
+    .car-img {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .events {
+        background: url("assets/Front_page/events.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+        height: 400px;
+    }
+    .big-screens {
+        padding-top: 55px;
+    }
+    .foot {
+        background-color: black;
+    }
+    .row-foot {
+        padding-top: 10px;
+    }
+    .faq {
+        position: relative;
+        ;
+        background-color: rgb(0, 0, 0, 1);
+        width: 100%;
+        height: auto;
+    }
+    .section-heading {
+        padding-top: 40px;
+        color: white;
+    }
+    .quote {
+        color: white;
+        padding-top: 5px;
+    }
+    /*GALLERY CSS*/
+    .pagin {
+        right: 5%;
+    }
+}
+
+.section-heading {
+    border-bottom: 3px solid white;
+}
+
+.btn-enroll {
+    opacity: 0.8;
+    background-color: white;
+    color: yellowgreen;
+    transition: color 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: colorswap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
     padding-bottom: 20px;
-    color:white;
-    font-family: 'Caveat', cursive;
-    font-size:23px;
-  }
-.content{
-  position:relative;
-  margin-right: auto;
-  margin-left: auto;
-}
-.content-column-1{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-2{
-  padding-top:45px;
-  text-align: center;
-}
-.content-column-3{
-  padding-top: 45px;
-  padding-bottom:45px;
-  text-align: center;
-}
-.aboutus{
-
-  position: relative;
-word-spacing: 0.20em;
-  height:60%;
-}
-.members{
-  position: relative;
-  height:525px;
-  background:linear-gradient(to right,rgba(47, 53, 66,1),rgba(0,0,0,1));
-}
-.car-img{
-  padding-left:15px;
-  padding-right: 15px;
+    padding-top: 20px;
 }
 
-.events{
-  background: url("assets/Front_page/events.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.8);
-  background-blend-mode: multiply;
-  height:400px;
-
+.btn-enroll:hover {
+    color: blueviolet;
 }
 
-.big-screens{
-  padding-top: 55px;
+@keyframes colorswap {
+    25% {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 1);
+    }
 }
 
-.foot{
-  background-color: black;
-
-}
-.row-foot{
-  padding-top: 10px;
+.r1 {
+    padding-top: 10px;
 }
 
-.faq{
-  position: relative;;
-  background-color:rgb(0,0,0,1);
-  width:100%;
-  height:auto;
-  }
-.section-heading{
-  padding-top:40px;
-  color:white;
+.r2 {
+    padding-top: 60px;
 }
 
-.quote{
-  color:white;
-  padding-top: 5px;
-}
-  /*GALLERY CSS*/
-
-.pagin{right:5%;
+.button-rules {
+    opacity: 1;
+    background-color: white !important;
+    color: black;
+    transition: color 0.5s;
 }
 
+.button-rules:hover {
+    color: grey;
 }
 
-.section-heading{
-  border-bottom: 3px solid white;
+.links {
+    transition: color 0.5s;
+    color: white;
 }
 
-
-
-.btn-enroll{
-  opacity:0.8;
-  background-color: black;
-  color:white;
-  transition: color 0.5s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: colorswap;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.btn-enroll:hover{
-
-  color:grey;
-}
-@keyframes colorswap{
-  25% {background-color:rgba(0,0,0,0.5);}
-  50% {background-color:rgba(0,0,0,0.6);}
-  75% {background-color:rgba(0,0,0,0.8);}
-  100% {background-color:rgba(0,0,0,0.1);}
-}
-
-
-.r1{
-  padding-top: 10px;
-}
-.r2{
-  padding-top: 60px;
-}
-.button-rules{
-  opacity:1;
-  background-color:white !important;
-  color:black;
-  transition: color 0.5s;
-}
-.button-rules:hover{
-  color:grey;
-}
-.links{
-  transition: color 0.5s;
-  color:white;
-}
-.conlist{
-  padding-top: 10px;
-
+.conlist {
+    padding-top: 10px;
 }
 
 .i2 {
-  color:white;
-  transition: color 1s;
-  padding-left:15px;
-  padding-right: 15px;
-}
-.i1{
-  color:white;
-  transition: color 1s;
-}
-.i3{
-  color:white;
-  transition: color 1s;
-  padding-right: 15px;
-}
-.i4{
-  color:white;
-transition: color 1s;
-}
-.i1:hover{
-
-  color: #1F4788;
-}
-.i2:hover{
-
-  color:#C3272B;
-}
-.i3:hover{
-
-  color:#FFA400;
-}
-.i4:hover{
-  color:#26A65B;
-}
-.foot2{
-background-color: black;
-}
-.mlink1:hover{
-
-  color:#1F4788;
-}
-.mlink2:hover{
-
-  color:#C3272B;
-}
-.mlink3:hover{
-
-  color:#FFA400;
-}
-.mlink4:hover{
-  color:#26A65B;
-}
-.mlinks{
-  transition: color 1s;
-  color:white;
-}
-.links:hover{
-  color:#6C7A89;
+    color: white;
+    transition: color 1s;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.foot2-row{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.card-box{
-box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-transition: box-shadow 0.5s;
-cursor: pointer;
-}
-.card-box:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.i1 {
+    color: white;
+    transition: color 1s;
 }
 
-.close_icon:hover{
-  background-color: black;
-  color:white;
-}
-.phone-number-box{
-  position: relative;
-  background-color: black;
-right: 0px;
-  width:100%;
-
-}
-.phone-number{
-  font-size: 11px;
-  display: block;
-  overflow: hidden;
-  position: absolute;
- font-family: 'Acme', sans-serif;
- right:0px;
-  padding-top:15px;
- background-color: black;
-  height:60px;
-  width:0px;
-  color: white;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  word-spacing: 0.25em;
-  transition: all 1s;
-  opacity: 1;
-  white-space: nowrap;
-}
-.mobile-phone-number{
-
-position: absolute;
-opacity: 0;
-display: block;
-overflow: hidden;
-position: absolute;
-border-radius: 5px;
-word-spacing: 1em;
-background-color: black;
-height:30px;
-width:70px;
-padding: 3px;
-color:white;
-right:10px;
-bottom:10px;
-transition: opacity 1s;
+.i3 {
+    color: white;
+    transition: color 1s;
+    padding-right: 15px;
 }
 
-.member-carousel{
-  position: relative;
-  padding-top: 30px;
+.i4 {
+    color: white;
+    transition: color 1s;
 }
-.member-pic{
-  position: relative;
-  border-radius:5%;
-  margin: auto;
-  width:260px;
-  height:230px;
-  }
-  .member-body{
-   color:white;
-  }
-  .member-body b{
+
+.i1:hover {
+    color: #1F4788;
+}
+
+.i2:hover {
+    color: #C3272B;
+}
+
+.i3:hover {
+    color: #FFA400;
+}
+
+.i4:hover {
+    color: #26A65B;
+}
+
+.foot2 {
+    background-color: black;
+}
+
+.mlink1:hover {
+    color: #1F4788;
+}
+
+.mlink2:hover {
+    color: #C3272B;
+}
+
+.mlink3:hover {
+    color: #FFA400;
+}
+
+.mlink4:hover {
+    color: #26A65B;
+}
+
+.mlinks {
+    transition: color 1s;
+    color: white;
+}
+
+.links:hover {
+    color: #6C7A89;
+}
+
+.foot2-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-box {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.card-box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close_icon:hover {
+    background-color: black;
+    color: white;
+}
+
+.phone-number-box {
+    position: relative;
+    background-color: black;
+    right: 0px;
+    width: 100%;
+}
+
+.phone-number {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    font-family: 'Acme', sans-serif;
+    right: 0px;
+    padding-top: 15px;
+    background-color: black;
+    height: 60px;
+    width: 0px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    word-spacing: 0.25em;
+    transition: all 1s;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.mobile-phone-number {
+    position: absolute;
+    opacity: 0;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5px;
+    word-spacing: 1em;
+    background-color: black;
+    height: 30px;
+    width: 70px;
+    padding: 3px;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    transition: opacity 1s;
+}
+
+.member-carousel {
+    position: relative;
+    padding-top: 30px;
+}
+
+.member-pic {
+    position: relative;
+    border-radius: 5%;
+    margin: auto;
+    width: 260px;
+    height: 230px;
+}
+
+.member-body {
+    color: white;
+}
+
+.member-body b {
     font-family: 'Caveat', cursive;
-  }
-  .member-body p{
+}
+
+.member-body p {
     font-family: 'Caveat', cursive;
     word-spacing: 4px;
-  }
-  .carbtn{
-    position:absolute;
-    vertical-align: middle;
-
-    background-color: rgba(254,254,254,0.3);
-  }
-  .carl{
-     left:15px;
-     top:39%;
-     z-index: 1;
-
-  }
-
-  .carr{
-     right:15px;
-     bottom:50%;
-     z-index: 1;
-
-  }
-
-.faq-card{
-  background-color: rgba(0,0,0,1.0);
-
-  font-weight:400;
-  font-size:1.1em;
-
 }
 
+.carbtn {
+    position: absolute;
+    vertical-align: middle;
+    background-color: rgba(254, 254, 254, 0.3);
+}
 
+.carl {
+    left: 15px;
+    top: 39%;
+    z-index: 1;
+}
+
+.carr {
+    right: 15px;
+    bottom: 50%;
+    z-index: 1;
+}
+
+.faq-card {
+    background-color: rgba(0, 0, 0, 1.0);
+    font-weight: 400;
+    font-size: 1.1em;
+}
 
 
 /* PHOTO GALLLERY SECTION*/
 
-#photogallery{
-
-display:none;
-width:100%;
-  background-color:#000000;
-  vertical-align: middle;
-
+#photogallery {
+    display: none;
+    width: 100%;
+    background-color: #000000;
+    vertical-align: middle;
 }
 
-
-
-#p1{
-  display:block;
+#p1 {
+    display: block;
 }
-#p2{
-  display: none;
-}
-.gallery-heading{
-  position: relative;
-  width: 400px;
-  height:auto;
-padding: 15px;
 
+#p2 {
+    display: none;
 }
-  .pagin{
+
+.gallery-heading {
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 15px;
+}
+
+.pagin {
     width: 100%;
     position: relative;
     padding-top: 25px;
-    color:white;
-list-style-type: none;
-  display: block;
-
-}
-.gallery-row{
-  padding: 10px;
-}
-.gallery-container{
-  border: solid white 6px;
-
-}
-.gallery-image{
-  padding:10px;
-  transition: padding 0.5s;
-}
-.gallery-image:hover{
-  padding:0px;
-}
-.gallery-heading{
-  color:white;
+    color: white;
+    list-style-type: none;
+    display: block;
 }
 
-.pagin-element{
-  display: inline-block;
-  font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-     background-color: #211E1E;
-  color:white;
-  cursor: pointer;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.5s;
+.gallery-row {
+    padding: 10px;
 }
-.pagin-element:hover{
+
+.gallery-container {
+    border: solid white 6px;
+}
+
+.gallery-image {
+    padding: 10px;
+    transition: padding 0.5s;
+}
+
+.gallery-image:hover {
+    padding: 0px;
+}
+
+.gallery-heading {
+    color: white;
+}
+
+.pagin-element {
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #211E1E;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s;
+}
+
+.pagin-element:hover {
     background-color: grey;
-    color:white;
+    color: white;
 }
-.pagin-icons{
-    padding-left:10px;
-  padding-right:10px;
 
-color:white;
+.pagin-icons {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
 }
-.btfgi{
-  color:white;
+
+.btfgi {
+    color: white;
 }
-.back-to-home{
-  position: relative;
-  right:10%;
+
+.back-to-home {
+    position: relative;
+    right: 10%;
 }
